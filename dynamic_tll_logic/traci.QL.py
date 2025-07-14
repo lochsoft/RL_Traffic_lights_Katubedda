@@ -1,4 +1,4 @@
-# Step 1: Add modules to provide access to specific libraries and functions
+""" # Step 1: Add modules to provide access to specific libraries and functions
 import os  # Module provides functions to handle file paths, directories, environment variables
 import sys  # Module provides access to Python-specific system parameters and functions
 import random
@@ -11,7 +11,7 @@ if 'SUMO_HOME' in os.environ:
     sys.path.append(tools)
 else:
     sys.exit("Please declare environment variable 'SUMO_HOME'")
-
+2
 # Step 3: Add Traci module to provide access to specific libraries and functions
 import traci  # Static network information (such as reading and analyzing network files)
 
@@ -73,10 +73,7 @@ def get_max_Q_value_of_state(s): #1. Objective Function 1
     return np.max(Q_table[s])
 
 def get_reward(state):  #2. Constraint 2 
-    """
-    Simple reward function:
-    Negative of total queue length to encourage shorter queues.
-    """
+
     total_queue = sum(state[:-1])  # Exclude the current_phase element
     reward = -float(total_queue)
     return reward
@@ -122,12 +119,7 @@ def get_state():  #3.& 4. Constraint 3 & 4
     return (q_EB_0, q_EB_1, q_EB_2, q_EB_3, q_SB_0, q_SB_1, q_SB_2, q_SB_3, q_WB_0, q_WB_1, current_phase)
 
 def apply_action(action, tls_id="KB_Junction"): #5. Constraint 5
-    """
-    Executes the chosen action on the traffic light, combining:
-      - Min Green Time check
-      - Switching to the next phase if allowed
-    Constraint #5: Ensure at least MIN_GREEN_STEPS pass before switching again.
-    """
+
     global last_switch_step
     
     if action == 0:
@@ -233,6 +225,174 @@ plt.grid(True)
 plt.show()
 
 # Plot Total Queue Length over Simulation Steps
+plt.figure(figsize=(10, 6))
+plt.plot(step_history, queue_history, marker='o', linestyle='-', label="Total Queue Length")
+plt.xlabel("Simulation Step")
+plt.ylabel("Total Queue Length")
+plt.title("RL Training: Queue Length over Steps")
+plt.legend()
+plt.grid(True)
+plt.show() """
+
+import os
+import pickle
+import sys
+import random
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Set up SUMO_HOME
+if 'SUMO_HOME' in os.environ:
+    tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
+    sys.path.append(tools)
+else:
+    sys.exit("Please declare environment variable 'SUMO_HOME'")
+
+import traci
+
+# SUMO configuration
+Sumo_config = [
+    'sumo-gui',
+    '-c', 'simulation_katubedda_junction_dynamic.sumocfg',
+    '--step-length', '1.0',  # Increased to 1s for efficiency
+    '--delay', '200',
+    '--lateral-resolution', '0'
+]
+
+# Variables for RL State
+q_EB_0 = q_EB_1 = q_EB_2 = q_EB_3 = 0
+q_SB_0 = q_SB_1 = q_SB_2 = q_SB_3 = 0
+q_WB_0 = q_WB_1 = 0
+current_phase = 0
+
+# RL Hyperparameters
+START = 900
+TOTAL_STEPS = 4500  # 1.15 hour (5.45-7 AM)
+ALPHA = 0.1
+GAMMA = 0.9
+EPSILON = 0.1
+ACTIONS = [0, 1]  # 0: keep phase, 1: switch phase
+Q_table = {}
+MIN_GREEN_STEPS = 100
+last_switch_step = -MIN_GREEN_STEPS
+
+# Detector configuration for flexibility
+DETECTORS = {
+    "EB": ["CMB_to_KBJ_001_1", "CMB_to_KBJ_001_2", "CMB_to_KBJ_001_3", "CMB_to_KBJ_001_4"],
+    "SB": ["MRT_to_KB_001.37_2", "MRT_to_KB_001.37_3", "MRT_to_KB_001.37_4", "MRT_to_KB_001.37_5"],
+    "WB": ["P_to_KBJ_2", "P_to_KBJ_1"]
+}
+
+# Function Definitions
+def get_queue_length(detector_id):
+    try:
+        return traci.lanearea.getLastStepVehicleNumber(detector_id)
+    except traci.TraCIException:
+        print(f"Warning: Detector {detector_id} not found.")
+        return 0
+
+def get_current_phase(tls_id):
+    return traci.trafficlight.getPhase(tls_id)
+
+def discretize_queue(q):
+    return 0 if q <= 2 else 1 if q <= 5 else 2
+
+def get_max_Q_value_of_state(s):
+    if s not in Q_table:
+        Q_table[s] = np.zeros(len(ACTIONS))
+    return np.max(Q_table[s])
+
+def get_reward(state):
+    total_queue = sum(state[:-1])
+    return -float(total_queue)
+
+def get_state():
+    global q_EB_0, q_EB_1, q_EB_2, q_EB_3, q_SB_0, q_SB_1, q_SB_2, q_SB_3, q_WB_0, q_WB_1, current_phase
+    state = []
+    for direction in DETECTORS.values():
+        for det in direction:
+            state.append(discretize_queue(get_queue_length(det)))
+    state.append(get_current_phase("KB_Junction"))
+    return tuple(state)
+
+def apply_action(action, tls_id="KB_Junction"):
+    global last_switch_step
+    if action == 0:
+        return
+    elif action == 1:
+        if current_simulation_step - last_switch_step >= MIN_GREEN_STEPS:
+            program = traci.trafficlight.getAllProgramLogics(tls_id)[0]
+            num_phases = len(program.phases)
+            next_phase = (get_current_phase(tls_id) + 1) % num_phases
+            traci.trafficlight.setPhase(tls_id, next_phase)
+            last_switch_step = current_simulation_step
+
+def update_Q_table(old_state, action, reward, new_state):
+    if old_state not in Q_table:
+        Q_table[old_state] = np.zeros(len(ACTIONS))
+    old_q = Q_table[old_state][action]
+    best_future_q = get_max_Q_value_of_state(new_state)
+    Q_table[old_state][action] = old_q + ALPHA * (reward + GAMMA * best_future_q - old_q)
+
+def get_action_from_policy(state):
+    if random.random() < EPSILON:
+        return random.choice(ACTIONS)
+    else:
+        if state not in Q_table:
+            Q_table[state] = np.zeros(len(ACTIONS))
+        return int(np.argmax(Q_table[state]))
+
+# Main RL Loop
+step_history = []
+reward_history = []
+queue_history = []
+cumulative_reward = 0.0
+
+try:
+    traci.start(Sumo_config)
+    traci.gui.setSchema("View #0", "real world")
+    print("\n=== Starting RL Training ===")
+    for step in range(START, TOTAL_STEPS + 1):
+        if traci.simulation.getMinExpectedNumber() == 0:
+            print("No vehicles left. Ending simulation.")
+            break
+        current_simulation_step = step
+        state = get_state()
+        action = get_action_from_policy(state)
+        apply_action(action)
+        traci.simulationStep()
+        new_state = get_state()
+        reward = get_reward(new_state)
+        cumulative_reward += reward
+        update_Q_table(state, action, reward, new_state)
+        if step % 100 == 0:
+            print(f"Step {step}, State: {state}, Action: {action}, Reward: {reward:.2f}, Cumulative Reward: {cumulative_reward:.2f}, Q-values: {Q_table[state]}")
+            step_history.append(step)
+            reward_history.append(cumulative_reward)
+            queue_history.append(sum(new_state[:-1]))
+finally:
+    traci.close()
+    os.system("pkill sumo")  # Force-kill SUMO if needed
+
+# Save Q-table
+with open("q_table.pkl", "wb") as f:
+    pickle.dump(Q_table, f)
+
+# Print final Q-table
+print("\nTraining completed. Q-table size:", len(Q_table))
+for st, actions in Q_table.items():
+    print(f"State: {st} -> Q-values: {actions}")
+
+# Visualization
+plt.figure(figsize=(10, 6))
+plt.plot(step_history, reward_history, marker='o', linestyle='-', label="Cumulative Reward")
+plt.xlabel("Simulation Step")
+plt.ylabel("Cumulative Reward")
+plt.title("RL Training: Cumulative Reward over Steps")
+plt.legend()
+plt.grid(True)
+plt.show()
+
 plt.figure(figsize=(10, 6))
 plt.plot(step_history, queue_history, marker='o', linestyle='-', label="Total Queue Length")
 plt.xlabel("Simulation Step")

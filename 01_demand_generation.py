@@ -1,6 +1,7 @@
 import os
 import subprocess
 import random
+import pandas as pd
 
 # 0.set working directory
 os.chdir("c:\\Users\\Lochana Minuwansala\\Downloads\\Simulation  model\\Katubedda Junction")
@@ -48,8 +49,8 @@ subprocess.run(route_sampler_warmup, shell=True)
 # 3. Generate Bus flows
 bus_flows = ("ptlines2flows.py "
              "--net-file network/katubedda_junction_network.net.xml "
-             "--ptlines-file additionals/bus_lines.xml "
-             "--ptstops-file additionals/bus_stops.add.xml "
+             "--ptlines-file additionals/bus/bus_lines.xml "
+             "--ptstops-file additionals/bus/bus_stops.add.xml "
              "--begin 0 "
              "--end 4500 "
              "--stop-duration 20 "
@@ -62,13 +63,37 @@ run_simulation_no_gui = ("sumo -c simulation_katubedda_junction_static.sumocfg")
 subprocess.run(run_simulation_no_gui, shell=True)
 
 # 5. Run multiple simulation runs by changing random seed
-"""seed = 12345
+seed = 12345
 random.seed(seed)
-random_numbers = [random.randint(10000, 99999) for i in range(3)]
+##random_numbers = [random.randint(10000, 99999) for i in range(3)]
+random_numbers = [1,2,3]
 
 comma_sep_string = ",".join(map(str, random_numbers))
 
 multiple_runs = ("runSeeds.py --configuration simulation_katubedda_junction_static.sumocfg "
                  "--verbose "
                  f"--seeds {comma_sep_string}")
-subprocess.run(multiple_runs, shell=True)"""
+subprocess.run(multiple_runs, shell=True)
+
+# 6. Output processing
+detectors = ["CMB_to_KBJ_001_1", "CMB_to_KBJ_001_2", "CMB_to_KBJ_001_3", "CMB_to_KBJ_001_4", 
+             "MRT_to_KB_001.37_2", "MRT_to_KB_001.37_3", "MRT_to_KB_001.37_4", "MRT_to_KB_001.37_5", 
+             "P_to_KBJ_1", "P_to_KBJ_2"]
+
+all_pd = pd.DataFrame()
+for detector in detectors:
+    detector_dt = pd.DataFrame()
+    for random_number in random_numbers:
+        xml_2_csv_call = f"""python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" additionals\\static_vehicle_data\\{random_number}.{detector}.xml -s ," """
+        subprocess.run(xml_2_csv_call, shell=True)
+
+        # read the output from xml2csv call to a pandas dataframe
+        temp = pd.read_csv(f"additionals/static_vehicle_data/{random_number}.{detector}.csv")
+        temp['random_seed'] = random_number
+        temp['scenario'] = 'Static TL'
+
+        detector_dt = pd.concat([detector_dt, temp], ignore_index=True)
+
+    all_pd = pd.concat([all_pd, detector_dt], ignore_index=True)
+
+all_pd.to_csv(f'additionals/static_vehicle_data/processed_static_results/all_static_data.csv', index = False)

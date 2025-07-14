@@ -11,7 +11,7 @@
                             demand/calibrated_demand_6am_7am.rou.xml,
                             demand/bus_demand.rou.xml,
                             demand/person_flow.rou.xml"/>
-        <additional-files value="additionals/bus_stops.add.xml,
+        <additional-files value="additionals/bus/bus_stops.add.xml,
                                 additionals/lane_detectors_dynamic.add.xml,
                                 additionals/vtype_dist_base.xml"/>
         <gui-settings-file value="additionals/satelite_image_bg.xml"/>

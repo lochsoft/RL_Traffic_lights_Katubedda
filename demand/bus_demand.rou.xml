@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-09 16:16:39.488516 by ptlines2flows.py v1_23_1+0000-676720d13f6
+<!-- generated on 2025-07-15 00:05:34.791450 by ptlines2flows.py v1_23_1+0000-676720d13f6
 <configuration>
     <net-file value="network/katubedda_junction_network.net.xml"/>
-    <ptlines-file value="additionals/bus_lines.xml"/>
-    <ptstops-file value="additionals/bus_stops.add.xml"/>
+    <ptlines-file value="additionals/bus/bus_lines.xml"/>
+    <ptstops-file value="additionals/bus/bus_stops.add.xml"/>
     <output-file value="demand/bus_demand.rou.xml"/>
+    <end value="4500.0"/>
 </configuration>
 -->
 
@@ -35,13 +36,13 @@
         <stop busStop="bs_1" duration="20.0" until="78.0"/> <!-- None -->
         <stop busStop="KJ_bus_stop_2" duration="20.0" until="275.0"/> <!-- None -->
     </route>
-    <flow id="bus_100/101/400/412/418/428/430/433:0" type="bus" route="bus_100/101/400/412/418/428/430/433:0" begin="0.0" end="3600.0" period="120" line="100/101/400/412/418/428/430/433:0" >
+    <flow id="bus_100/101/400/412/418/428/430/433:0" type="bus" route="bus_100/101/400/412/418/428/430/433:0" begin="0.0" end="4500.0" period="120" line="100/101/400/412/418/428/430/433:0" >
         <param key="name" value="Moratuwa-&gt;Fort"/>
     </flow>
-    <flow id="bus_100/101/400/412/418/428/430/433:1" type="bus" route="bus_100/101/400/412/418/428/430/433:1" begin="0.0" end="3600.0" period="120" line="100/101/400/412/418/428/430/433:1" >
+    <flow id="bus_100/101/400/412/418/428/430/433:1" type="bus" route="bus_100/101/400/412/418/428/430/433:1" begin="0.0" end="4500.0" period="120" line="100/101/400/412/418/428/430/433:1" >
         <param key="name" value="Fort-&gt;Moratuwa"/>
     </flow>
-    <flow id="bus_255:0" type="bus" route="bus_255:0" begin="6.0" end="3606.0" period="300" line="255:0" >
+    <flow id="bus_255:0" type="bus" route="bus_255:0" begin="6.0" end="4506.0" period="300" line="255:0" >
         <param key="name" value="Galkissa-&gt;Kottawa"/>
     </flow>
 </routes>

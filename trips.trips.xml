@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-09 16:16:39.209942 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_23_1+0000-676720d13f6
+<!-- generated on 2025-07-15 00:05:34.525537 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_23_1+0000-676720d13f6
 <configuration>
     <net-file value="network/katubedda_junction_network.net.xml"/>
-    <ptlines-file value="additionals/bus_lines.xml"/>
-    <ptstops-file value="additionals/bus_stops.add.xml"/>
+    <ptlines-file value="additionals/bus/bus_lines.xml"/>
+    <ptstops-file value="additionals/bus/bus_stops.add.xml"/>
     <output-file value="demand/bus_demand.rou.xml"/>
+    <end value="4500.0"/>
 </configuration>
 -->
 
