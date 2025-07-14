@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-09 16:16:39.209942 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_23_1+0000-676720d13f6
+<configuration>
+    <net-file value="network/katubedda_junction_network.net.xml"/>
+    <ptlines-file value="additionals/bus_lines.xml"/>
+    <ptstops-file value="additionals/bus_stops.add.xml"/>
+    <output-file value="demand/bus_demand.rou.xml"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="bus" vClass="bus" speedFactor="0.95"/>
+    <vType id="tram" vClass="tram" speedFactor="1.0"/>
+    <vType id="train" vClass="rail"/>
+    <vType id="subway" vClass="subway"/>
+    <vType id="light_rail" vClass="rail_urban"/>
+    <vType id="monorail" vClass="rail_urban"/>
+    <vType id="trolleybus" vClass="bus" speedFactor="0.95"/>
+    <vType id="minibus" vClass="bus" speedFactor="0.95"/>
+    <vType id="share_taxi" vClass="taxi" speedFactor="0.95"/>
+    <vType id="aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="ferry" vClass="ship"/>
+    <trip id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" depart="0.0" departLane="best" from="MRT_to_KB_001" to="KBJ_to_CMB_002">
+        <stop busStop="Kzone_bus_stop" duration="30.0"/>  <!-- None -->
+        <stop busStop="KJ_bus_stop" duration="30.0"/>  <!-- None -->
+        <stop busStop="bs_2" duration="30.0"/>  <!-- None -->
+        <stop busStop="bs_0" duration="30.0"/>  <!-- None -->
+    </trip>
+    <trip id="1_bus_100/101/400/412/418/428/430/433:1" type="bus" depart="0.0" departLane="best" from="CMB_to_KBJ_003" to="KB_to_MRT_002">
+        <stop busStop="bs_1" duration="30.0"/>  <!-- None -->
+        <stop busStop="KJ_bus_stop_3" duration="30.0"/>  <!-- None -->
+    </trip>
+    <trip id="2_bus_255:0" type="bus" depart="0.0" departLane="best" from="CMB_to_KBJ_003" to="KBJ_to_P">
+        <stop busStop="bs_1" duration="30.0"/>  <!-- None -->
+        <stop busStop="KJ_bus_stop_2" duration="30.0"/>  <!-- None -->
+    </trip>
+</routes>

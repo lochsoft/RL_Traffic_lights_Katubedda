@@ -1,0 +1,47 @@
+<data>
+	<interval id="05:45 - 05:50" begin="0" end="300">
+		<!--"Junction : Katubedda Junction Direction : To Colombo"-->
+		<edgeRelation from="MRT_to_KB_001.37" to="KBJ_to_CMB_001" count="94"/>
+		<!--"Junction : Katubedda Junction Direction : To Colombo"-->
+		<edgeRelation from="P_to_KBJ" to="KBJ_to_CMB_001" count="12"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="CMB_to_KBJ_001" to="KB_to_MRT_001" count="15"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="P_to_KBJ" to="KB_to_MRT_001" count="5"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="CMB_to_KBJ_001" to="KBJ_to_P" count="4"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="MRT_to_KB_001.37" to="KBJ_to_P" count="9"/>
+	</interval>
+
+	<interval id="05:50 - 05:55" begin="300" end="600">
+		<!--"Junction : Katubedda Junction Direction : To Colombo"-->
+		<edgeRelation from="MRT_to_KB_001.37" to="KBJ_to_CMB_001" count="94"/>
+		<!--"Junction : Katubedda Junction Direction : To Colombo"-->
+		<edgeRelation from="P_to_KBJ" to="KBJ_to_CMB_001" count="12"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="CMB_to_KBJ_001" to="KB_to_MRT_001" count="15"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="P_to_KBJ" to="KB_to_MRT_001" count="5"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="CMB_to_KBJ_001" to="KBJ_to_P" count="4"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="MRT_to_KB_001.37" to="KBJ_to_P" count="9"/>
+	</interval>
+
+	<interval id="05:55 - 06:00" begin="600" end="900">
+		<!--"Junction : Katubedda Junction Direction : To Colombo"-->
+		<edgeRelation from="MRT_to_KB_001.37" to="KBJ_to_CMB_001" count="94"/>
+		<!--"Junction : Katubedda Junction Direction : To Colombo"-->
+		<edgeRelation from="P_to_KBJ" to="KBJ_to_CMB_001" count="12"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="CMB_to_KBJ_001" to="KB_to_MRT_001" count="15"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="P_to_KBJ" to="KB_to_MRT_001" count="5"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="CMB_to_KBJ_001" to="KBJ_to_P" count="4"/>
+		<!--"Junction : Katubedda Junction Direction : Out of Colombo"-->
+		<edgeRelation from="MRT_to_KB_001.37" to="KBJ_to_P" count="9"/>
+	</interval>
+
+</data>

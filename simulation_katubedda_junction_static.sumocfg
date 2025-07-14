@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-02 23:46:15 by Eclipse SUMO GUI Version 1.23.1
+-->
+
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="network/katubedda_junction_network.net.xml"/>
+        <route-files value="demand/calibrated_demand_warmup.rou.xml,
+                            demand/calibrated_demand_6am_7am.rou.xml,
+                            demand/bus_demand.rou.xml,
+                            demand/person_flow.rou.xml"/>
+        <additional-files value="additionals/traffic_lights_static.ttl.xml, 
+                                additionals/bus_stops.add.xml,
+                                additionals/lane_detectors_static.add.xml,
+                                additionals/vtype_dist_base.xml"/>
+        <gui-settings-file value="additionals/satelite_image_bg.xml"/>
+    </input>
+
+</sumoConfiguration>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-09 16:16:39 by Eclipse SUMO sumo Version 1.23.1
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="network/katubedda_junction_network.net.xml"/>
+        <route-files value="trips.trips.xml"/>
+        <additional-files value="additionals/bus_stops.add.xml"/>
+    </input>
+
+    <output>
+        <vehroute-output value="vehroutes.xml"/>
+        <stop-output value="stopinfos.xml"/>
+    </output>
+
+    <time>
+        <begin value="0.0"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <time-to-teleport.disconnected value="0"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-interval value="0"/>
+    </routing>
+
+    <report>
+        <aggregate-warnings value="5"/>
+        <error-log value="trips.trips.xml.errorlog"/>
+        <no-step-log value="true"/>
+    </report>
+
+</sumoConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="1_bus_100/101/400/412/418/428/430/433:1" type="bus" depart="0.00" departLane="1" arrival="116.00">
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+        <stop busStop="bs_1" duration="30.00"/>
+        <stop busStop="KJ_bus_stop_3" duration="30.00"/>
+    </vehicle>
+
+    <vehicle id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" depart="0.00" departLane="1" arrival="181.00">
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+        <stop busStop="Kzone_bus_stop" duration="30.00"/>
+        <stop busStop="KJ_bus_stop" duration="30.00"/>
+        <stop busStop="bs_2" duration="30.00"/>
+        <stop busStop="bs_0" duration="30.00"/>
+    </vehicle>
+
+    <vehicle id="2_bus_255:0" type="bus" depart="6.00" departLane="1" arrival="296.00">
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
+        <stop busStop="bs_1" duration="30.00"/>
+        <stop busStop="KJ_bus_stop_2" duration="30.00"/>
+    </vehicle>
+
+</routes>

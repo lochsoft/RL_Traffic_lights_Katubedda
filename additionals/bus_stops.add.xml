@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-08 02:14:22 by Eclipse SUMO netedit Version 1.23.1
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- StoppingPlaces -->
+    <busStop id="KJ_bus_stop" lane="MRT_to_KB_001.37_1" startPos="19.33" endPos="39.33" friendlyPos="1"/>
+    <busStop id="KJ_bus_stop_2" lane="KBJ_to_P_1" startPos="17.85" endPos="27.85" friendlyPos="1"/>
+    <busStop id="KJ_bus_stop_3" lane="KB_to_MRT_002_1" startPos="19.44" endPos="29.44" friendlyPos="1"/>
+    <busStop id="Kzone_bus_stop" lane="MRT_to_KB_001_1" startPos="17.08" endPos="27.08" friendlyPos="1"/>
+    <busStop id="bs_0" lane="KBJ_to_CMB_002_1" startPos="115.30" endPos="125.30" friendlyPos="1"/>
+    <busStop id="bs_1" lane="CMB_to_KBJ_003_1" startPos="71.61" endPos="81.61"/>
+    <busStop id="bs_2" lane="KBJ_to_CMB_001_1" startPos="34.83" endPos="44.83" friendlyPos="1"/>
+   </additional>
