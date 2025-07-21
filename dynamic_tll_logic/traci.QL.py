@@ -248,8 +248,6 @@ if 'SUMO_HOME' in os.environ:
 else:
     sys.exit("Please declare environment variable 'SUMO_HOME'")
 
-import traci
-
 # SUMO configuration
 Sumo_config = [
     'sumo-gui',
