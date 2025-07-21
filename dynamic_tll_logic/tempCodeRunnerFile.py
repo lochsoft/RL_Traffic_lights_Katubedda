@@ -1,1 +1,8 @@
-
+plt.figure(figsize=(10, 6))
+plt.plot(step_history, queue_history, marker='o', linestyle='-', label="Total Queue Length")
+plt.xlabel("Simulation Step")
+plt.ylabel("Total Queue Length")
+plt.title("RL Training: Queue Length over Steps")
+plt.legend()
+plt.grid(True)
+plt.show()
