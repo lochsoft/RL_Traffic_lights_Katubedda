@@ -2,6 +2,7 @@ import os
 import subprocess
 import random
 import pandas as pd
+from traciQL import run_traciQL_simulation
 
 # 0.set working directory
 os.chdir("c:\\Users\\Lochana Minuwansala\\Downloads\\Simulation  model\\Katubedda Junction")
@@ -58,16 +59,19 @@ bus_flows = ("ptlines2flows.py "
 
 subprocess.run(bus_flows, shell=True)
 
-# 4.Run Simulation - No GUI
-run_simulation_no_gui = ("sumo -c simulation_katubedda_junction_static.sumocfg")
-subprocess.run(run_simulation_no_gui, shell=True)
+# 4.Run Simulation - No GUI - Static
+run_simulation_no_gui_static = ("sumo -c simulation_katubedda_junction_static.sumocfg")
+subprocess.run(run_simulation_no_gui_static, shell=True)
+
+# 4.Run Simulation - No GUI - Dynamic
+run_traciQL_simulation()
+print("dynamic TL logic running completed!")
 
 # 5. Run multiple simulation runs by changing random seed
 seed = 12345
 random.seed(seed)
 ##random_numbers = [random.randint(10000, 99999) for i in range(3)]
 random_numbers = [1,2,3]
-
 comma_sep_string = ",".join(map(str, random_numbers))
 
 # Static Traffic lights
@@ -77,8 +81,9 @@ multiple_runs_static = ("runSeeds.py --configuration simulation_katubedda_juncti
 subprocess.run(multiple_runs_static, shell=True)
 
 # 6. Output processing
-scenarios = ["static_vehicle_data, dynamic_vehicle_data"]
+scenarios = ["static_vehicle_data"]
 
+# converting static xml data file to csv
 for scene_folder in scenarios:
     all_pd = pd.DataFrame()
     for random_number in random_numbers:
@@ -94,9 +99,9 @@ for scene_folder in scenarios:
 
     all_pd.to_csv(f'outputs/{scene_folder}/processed_{scene_folder}.csv', index = False)
 
-xml_2_csv_call = f"""python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" outputs\\dynamic_vehicle_data\\.xml -s ," """
+# converting dynamic xml data file to csv
+xml_2_csv_call = """python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" outputs\\dynamic_vehicle_data\\dynamic_vehicle_data.xml -s ," """
 subprocess.run(xml_2_csv_call, shell=True)
-
 
 '''detectors = ["CMB_to_KBJ_001_1", "CMB_to_KBJ_001_2", "CMB_to_KBJ_001_3", "CMB_to_KBJ_001_4", 
              "MRT_to_KB_001.37_2", "MRT_to_KB_001.37_3", "MRT_to_KB_001.37_4", "MRT_to_KB_001.37_5", 

@@ -26,4 +26,8 @@
             <lateral-resolution value="0"/>
     </processing>
 
+    <random_number>
+        <seed value="224178"/>
+    </random_number>
+
 </sumoConfiguration>

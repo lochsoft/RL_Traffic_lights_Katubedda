@@ -1,4 +1,10 @@
-temp = pd.read_csv(f"outputs/dynamic_vehicle_data/processed_dynamic_vehicle_data.csv")
-temp['scenario'] = "dynamic"
-
-all_pd.to_csv(f'outputs/dynamic_vehicle_data/processed_dynamic_vehicle_data.csv', index = False)
+plt.figure(figsize=(12, 6))
+    plt.plot(step_history, queue_history, linestyle='-', label="Total Queue Length")
+    plt.xlabel("Simulation Step")
+    plt.ylabel("Total Queue Length")
+    plt.title("RL Training: Queue Length over Steps")
+    plt.legend()
+    plt.xticks(np.arange(900, 4501, 300))
+    plt.grid(True)
+    plt.savefig("Queue Length over Steps.png")
+    plt.show()
