@@ -1,4 +1,4 @@
-""" # Step 1: Add modules to provide access to specific libraries and functions
+# Step 1: Add modules to provide access to specific libraries and functions
 import os  # Module provides functions to handle file paths, directories, environment variables
 import sys  # Module provides access to Python-specific system parameters and functions
 import random
@@ -11,22 +11,20 @@ if 'SUMO_HOME' in os.environ:
     sys.path.append(tools)
 else:
     sys.exit("Please declare environment variable 'SUMO_HOME'")
-2
+
 # Step 3: Add Traci module to provide access to specific libraries and functions
 import traci  # Static network information (such as reading and analyzing network files)
 
 # Step 4: Define Sumo configuration
 Sumo_config = [
-    'sumo-gui',
+    'sumo',
     '-c', 'simulation_katubedda_junction_dynamic.sumocfg',
-    '--step-length', '0.10',
-    '--delay', '200',
-    '--lateral-resolution', '0'
+    '--delay', '20',
 ]
 
 # Step 5: Open connection between SUMO and Traci
 traci.start(Sumo_config)
-traci.gui.setSchema("View #0", "real world")
+#traci.gui.setSchema("View #0", "real world")
 
 # -------------------------
 # Step 6: Define Variables
@@ -46,7 +44,7 @@ q_WB_1 = 0
 current_phase = 0
 
 # ---- Reinforcement Learning Hyperparameters ----
-TOTAL_STEPS = 10000    # The total number of simulation steps for continuous (online) training.
+TOTAL_STEPS = 5500    # The total number of simulation steps for continuous (online) training.
 
 ALPHA = 0.1            # Learning rate (α) between[0, 1]    #If α = 1, you fully replace the old Q-value with the newly computed estimate.
                                                             #If α = 0, you ignore the new estimate and never update the Q-value.
@@ -225,16 +223,17 @@ plt.grid(True)
 plt.show()
 
 # Plot Total Queue Length over Simulation Steps
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(12, 6))
 plt.plot(step_history, queue_history, marker='o', linestyle='-', label="Total Queue Length")
 plt.xlabel("Simulation Step")
 plt.ylabel("Total Queue Length")
 plt.title("RL Training: Queue Length over Steps")
 plt.legend()
+plt.xticks(np.arange(900, 4501, 300))
 plt.grid(True)
-plt.show() """
+plt.show()
 
-import os
+""" import os
 import pickle
 import sys
 import random
@@ -266,8 +265,8 @@ q_WB_0 = q_WB_1 = 0
 current_phase = 0
 
 # RL Hyperparameters
-START = 900
-TOTAL_STEPS = 4500  # 1.15 hour (5.45-7 AM)
+START = 0
+TOTAL_STEPS = 5500  # 1.15 hour (5.45-7 AM)
 ALPHA = 0.1
 GAMMA = 0.9
 EPSILON = 0.1
@@ -401,7 +400,7 @@ plt.title("RL Training: Queue Length over Steps")
 plt.legend()
 plt.grid(True)
 plt.show()
-
+ """
 
 """ import os
 import pickle

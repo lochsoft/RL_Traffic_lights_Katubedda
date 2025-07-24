@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-24 21:42:27 by Eclipse SUMO GUI Version 1.23.1
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\network/katubedda_junction_network.net.xml"/>
+        <route-files value="C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\demand/calibrated_demand_warmup.rou.xml,C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\                             demand/calibrated_demand_6am_7am.rou.xml,C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\                             demand/bus_demand.rou.xml,C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\                             demand/person_flow.rou.xml"/>
+        <additional-files value="C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\additionals/traffic_lights_static.ttl.xml,C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\                                  additionals/bus/bus_stops.add.xml,C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\                                 additionals/vtype_dist_base.xml"/>
+    </input>
+
+    <output>
+        <queue-output value="C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\outputs/static_vehicle_data/static_vehicle_data.xml"/>
+        <queue-output.period value="300"/>
+    </output>
+
+    <processing>
+        <lateral-resolution value="0"/>
+    </processing>
+
+    <gui_only>
+        <gui-settings-file value="C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\additionals/satelite_image_bg.xml"/>
+    </gui_only>
+
+</sumoConfiguration>

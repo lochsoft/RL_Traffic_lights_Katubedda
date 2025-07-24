@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-21 11:55:36 by Eclipse SUMO sumo Version 1.23.1
+<!-- generated on 2025-07-24 15:55:14 by Eclipse SUMO sumo Version 1.23.1
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -43,7 +43,7 @@
         <stop busStop="KJ_bus_stop_3" duration="30.00"/>
     </vehicle>
 
-    <vehicle id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" depart="0.00" departLane="1" arrival="181.00">
+    <vehicle id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" depart="0.00" departLane="1" arrival="182.00">
         <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
         <stop busStop="Kzone_bus_stop" duration="30.00"/>
         <stop busStop="KJ_bus_stop" duration="30.00"/>

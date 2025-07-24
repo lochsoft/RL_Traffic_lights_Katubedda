@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-21 11:55:36 by Eclipse SUMO sumo Version 1.23.1
+<!-- generated on 2025-07-24 15:55:14 by Eclipse SUMO sumo Version 1.23.1
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -42,7 +42,7 @@
     <stopinfo id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" lane="MRT_to_KB_001.37_1" pos="39.33" parking="0" started="51.00" ended="81.00" busStop="KJ_bus_stop" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" blockedDuration="0.00"/>
     <stopinfo id="2_bus_255:0" type="bus" lane="CMB_to_KBJ_003_1" pos="81.59" parking="0" started="54.00" ended="84.00" busStop="bs_1" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" blockedDuration="35.00"/>
     <stopinfo id="1_bus_100/101/400/412/418/428/430/433:1" type="bus" lane="KB_to_MRT_002_1" pos="29.44" parking="0" started="73.00" ended="103.00" busStop="KJ_bus_stop_3" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" blockedDuration="0.00"/>
-    <stopinfo id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" lane="KBJ_to_CMB_001_1" pos="44.83" parking="0" started="95.00" ended="125.00" busStop="bs_2" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" blockedDuration="0.00"/>
-    <stopinfo id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" lane="KBJ_to_CMB_002_1" pos="125.27" parking="0" started="145.00" ended="175.00" busStop="bs_0" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" blockedDuration="0.00"/>
+    <stopinfo id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" lane="KBJ_to_CMB_001_1" pos="44.83" parking="0" started="96.00" ended="126.00" busStop="bs_2" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" blockedDuration="0.00"/>
+    <stopinfo id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" lane="KBJ_to_CMB_002_1" pos="125.29" parking="0" started="146.00" ended="176.00" busStop="bs_0" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" blockedDuration="0.00"/>
     <stopinfo id="2_bus_255:0" type="bus" lane="KBJ_to_P_1" pos="27.85" parking="0" started="251.00" ended="281.00" busStop="KJ_bus_stop_2" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" blockedDuration="0.00"/>
 </stops>

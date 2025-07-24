@@ -77,23 +77,44 @@ multiple_runs_static = ("runSeeds.py --configuration simulation_katubedda_juncti
 subprocess.run(multiple_runs_static, shell=True)
 
 # 6. Output processing
-detectors = ["CMB_to_KBJ_001_1", "CMB_to_KBJ_001_2", "CMB_to_KBJ_001_3", "CMB_to_KBJ_001_4", 
+scenarios = ["static_vehicle_data, dynamic_vehicle_data"]
+
+for scene_folder in scenarios:
+    all_pd = pd.DataFrame()
+    for random_number in random_numbers:
+        xml_2_csv_call = f"""python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" outputs\\{scene_folder}\\{random_number}.{scene_folder}.xml -s ," """
+        subprocess.run(xml_2_csv_call, shell=True)
+
+        # read the output from xml2csv call to a pandas dataframe
+        temp = pd.read_csv(f"outputs/{scene_folder}/{random_number}.{scene_folder}.csv")
+        temp['random_seed'] = random_number
+        temp['scenario'] = scene_folder
+
+        all_pd = pd.concat([all_pd, temp], ignore_index=True)
+
+    all_pd.to_csv(f'outputs/{scene_folder}/processed_{scene_folder}.csv', index = False)
+
+xml_2_csv_call = f"""python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" outputs\\dynamic_vehicle_data\\.xml -s ," """
+subprocess.run(xml_2_csv_call, shell=True)
+
+
+'''detectors = ["CMB_to_KBJ_001_1", "CMB_to_KBJ_001_2", "CMB_to_KBJ_001_3", "CMB_to_KBJ_001_4", 
              "MRT_to_KB_001.37_2", "MRT_to_KB_001.37_3", "MRT_to_KB_001.37_4", "MRT_to_KB_001.37_5", 
              "P_to_KBJ_1", "P_to_KBJ_2"]
 
 #scenarios = ["static_vehicle_data", "dynamic_vehicle_data"]
-scenarios = ["static_vehicle_data"]
+scenarios = ["static_vehicle_data"]'''
 
-for scene_folder in scenarios:
+'''for scene_folder in scenarios:
     all_pd = pd.DataFrame()
     for detector in detectors:
         detector_dt = pd.DataFrame()
         for random_number in random_numbers:
-            xml_2_csv_call = f"""python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" additionals\\{scene_folder}\\{random_number}.{detector}.xml -s ," """
+            xml_2_csv_call = f"""python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" outputs\\{scene_folder}\\{random_number}.{detector}.xml -s ," """
             subprocess.run(xml_2_csv_call, shell=True)
 
             # read the output from xml2csv call to a pandas dataframe
-            temp = pd.read_csv(f"additionals/{scene_folder}/{random_number}.{detector}.csv")
+            temp = pd.read_csv(f"outputs/{scene_folder}/{random_number}.{detector}.csv")
             temp['random_seed'] = random_number
             temp['scenario'] = scene_folder
 
@@ -101,16 +122,16 @@ for scene_folder in scenarios:
 
         all_pd = pd.concat([all_pd, detector_dt], ignore_index=True)
 
-    all_pd.to_csv(f'additionals/{scene_folder}/processed_{scene_folder}_results/all_{scene_folder}.csv', index = False)
+    all_pd.to_csv(f'outputs/{scene_folder}/processed_{scene_folder}_results/all_{scene_folder}.csv', index = False)'''
 
-for detector in detectors:
+'''for detector in detectors:
         detector_dt = pd.DataFrame()
         for random_number in random_numbers:
-            xml_2_csv_call = f"""python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" additionals\\dynamic_vehicle_data\\{detector}.xml -s ," """
+            xml_2_csv_call = f"""python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" outputs\\dynamic_vehicle_data\\{detector}.xml -s ," """
             subprocess.run(xml_2_csv_call, shell=True)
 
             # read the output from xml2csv call to a pandas dataframe
-            temp = pd.read_csv(f"additionals/dynamic_vehicle_data/{detector}.csv")
+            temp = pd.read_csv(f"outputs/dynamic_vehicle_data/{detector}.csv")
             temp['random_seed'] = random_number
             temp['scenario'] = "dynamic"
 
@@ -118,4 +139,5 @@ for detector in detectors:
 
         all_pd = pd.concat([all_pd, detector_dt], ignore_index=True)
 
-all_pd.to_csv(f'additionals/dynamic_vehicle_data/processed_dynamic_vehicle_data_results/all_dynamic_vehicle_data.csv', index = False)
+all_pd.to_csv(f'outputs/dynamic_vehicle_data/processed_dynamic_vehicle_data_results/all_dynamic_vehicle_data.csv', index = False)
+'''

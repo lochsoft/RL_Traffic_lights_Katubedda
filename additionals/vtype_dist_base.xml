@@ -4,44 +4,126 @@
 	 <vTypeDistribution id="v_type_dist_base">
 		 <vType id="Car" vClass="passenger"
 			 guiShape="passenger/sedan" 
-			 probability="0.351771511" minGap="2"
+			 probability="0.351771511" minGap="2" minGapLat="1"
 			 length="4.2" width="2.1" 
 			 maxSpeed="22.22" 
-			 sigma="0.23424849961615712"/> 
+			 sigma="0.23424849961615712"
+			 lcStrategic="150.0" lcCooperative="0.9"
+			 latAlignment="nice"/> 
 			 
 		 <vType id="Motor_Cycle" vClass="motorcycle"
 			 guiShape="motorcycle" 
-			 probability="0.308749096" minGap="1"
+			 probability="0.308749096" minGap="1" minGapLat="1"
 			 length="2.0" width="0.9" 
 			 maxSpeed="22.22" 
-			 sigma="0.23424849961615712"/> 
+			 sigma="0.23424849961615712"
+			 lcStrategic="150.0" lcCooperative="0.9"
+			 latAlignment="compact"/> 
 
 		 <vType id="3_Wheeler" vClass="passenger"
 			 guiShape="passenger/hatchback" 
-			 probability="0.187997108" minGap="1"
+			 probability="0.187997108" minGap="1" minGapLat="1"
 			 length="2.55" width="1.5" 
 			 maxSpeed="16.67" 
-			 sigma="0.23424849961615712"/> 
+			 sigma="0.23424849961615712"
+			 lcStrategic="150.0" lcCooperative="0.9"
+			 latAlignment="compact"/> 
 
 		 <vType id="Van" vClass="passenger"
 			 guiShape="passenger/van" 
-			 probability="0.082067968" minGap="2"
+			 probability="0.082067968" minGap="2" minGapLat="1"
 			 length="5.3" width="2.10" 
 			 maxSpeed="19.44" 
-			 sigma="0.23424849961615712"/> 
+			 sigma="0.23424849961615712"
+			 lcStrategic="150.0" lcCooperative="0.9"
+			 latAlignment="nice"/> 
 
 		 <vType id="Goods_Vehicle" vClass="truck"
 			 guiShape="truck" 
-			 probability="0.04483008" minGap="2.5"
+			 probability="0.04483008" minGap="2.5" minGapLat="1"
 			 length="6.25" width="2.35" 
 			 maxSpeed="13.889" 
-			 sigma="0.23424849961615712"/> 
+			 sigma="0.23424849961615712"
+			 lcStrategic="150.0" lcCooperative="0.9"
+			 latAlignment="nice"/> 
 
 		 <vType id="Multi_Axle_6_7" vClass="trailer"
 			 guiShape="truck/trailer" 
-			 probability="0.001084599" minGap="2.5"
+			 probability="0.001084599" minGap="2.5" minGapLat="1"
 			 length="15.5" width="3.0" 
 			 maxSpeed="11.11" 
-			 sigma="0.23424849961615712"/>
+			 sigma="0.23424849961615712"
+			 lcStrategic="150.0" lcCooperative="0.9"
+			 latAlignment="nice"/>
 	 </vTypeDistribution> 
 </additional>
+
+<!--<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <vTypeDistribution id="v_type_dist_base">
+        <vType id="Car" vClass="passenger"
+               guiShape="passenger/sedan" 
+               probability="0.351771511" minGap="2"
+               length="4.2" width="1.8" 
+               maxSpeed="22.22" 
+               sigma="0.23424849961615712"
+               lcSublane="1.0" lcStrategic="100.0" lcCooperative="0.9" lcSpeedGain="1.0"
+               latAlignment="nice"/> 
+
+        <vType id="Motor_Cycle" vClass="motorcycle"
+               guiShape="motorcycle" 
+               probability="0.308749096" minGap="1"
+               length="2.0" width="0.9" 
+               maxSpeed="22.22" 
+               sigma="0.23424849961615712"
+               lcSublane="1.0" lcStrategic="100.0" lcCooperative="0.75" lcSpeedGain="1.5"
+               latAlignment="arbitrary"/> 
+
+        <vType id="3_Wheeler" vClass="passenger"
+               guiShape="passenger/hatchback" 
+               probability="0.187997108" minGap="1"
+               length="2.55" width="1.5" 
+               maxSpeed="16.67" 
+               sigma="0.23424849961615712"
+               lcSublane="1.0" lcStrategic="100.0" lcCooperative="0.75" lcSpeedGain="1.5"
+               latAlignment="arbitrary"/> 
+
+        <vType id="Van" vClass="passenger"
+               guiShape="passenger/van" 
+               probability="0.082067968" minGap="2"
+               length="5.3" width="2.10" 
+               maxSpeed="19.44" 
+               sigma="0.23424849961615712"
+               lcSublane="1.0" lcStrategic="100.0" lcCooperative="0.9" lcSpeedGain="1.0"
+               latAlignment="nice"/> 
+
+        <vType id="Goods_Vehicle" vClass="truck"
+               guiShape="truck" 
+               probability="0.04483008" minGap="2.5"
+               length="6.25" width="2.35" 
+               maxSpeed="13.889" 
+               sigma="0.23424849961615712"
+               lcSublane="1.0" lcStrategic="100.0" lcCooperative="0.9" lcSpeedGain="1.0"
+               latAlignment="nice"/> 
+
+        <vType id="Multi_Axle_6_7" vClass="trailer"
+               guiShape="truck/trailer" 
+               probability="0.001084599" minGap="2.5"
+               length="15.5" width="3.0" 
+               maxSpeed="11.11" 
+               sigma="0.23424849961615712"
+               lcSublane="1.0" lcStrategic="100.0" lcCooperative="0.9" lcSpeedGain="1.0"
+               latAlignment="nice"/>
+    </vTypeDistribution> 
+</additional>
+-->
+
+
+
+
+<!-- 
+lcStrategic="50.0": Ensures vehicles plan lane changes 50 meters before the intersection, preventing right-turning vehicles from being stuck in the left lane.
+lcCooperative: Set to 0.8 for cars, vans, trucks, and trailers to promote cooperative behavior; set to 0.5 for motorcycles and 3-wheelers to reflect aggressive weaving.
+lcSpeedGain: Set to 1.5 for motorcycles and 3-wheelers to prioritize faster lanes, 1.0 for others to maintain standard behavior. 
+-->

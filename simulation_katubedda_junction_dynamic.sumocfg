@@ -17,4 +17,13 @@
         <gui-settings-file value="additionals/satelite_image_bg.xml"/>
     </input>
 
+    <output>
+        <queue-output.period value="300"/>
+        <queue-output value="outputs/dynamic_vehicle_data/dynamic_vehicle_data.xml"/>
+    </output>
+
+    <processing>
+            <lateral-resolution value="0"/>
+    </processing>
+
 </sumoConfiguration>

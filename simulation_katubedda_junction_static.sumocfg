@@ -13,9 +13,17 @@
                             demand/person_flow.rou.xml"/>
         <additional-files value="additionals/traffic_lights_static.ttl.xml, 
                                 additionals/bus/bus_stops.add.xml,
-                                additionals/lane_detectors_static.add.xml,
                                 additionals/vtype_dist_base.xml"/>
         <gui-settings-file value="additionals/satelite_image_bg.xml"/>
     </input>
+
+    <output>
+        <queue-output.period value="300"/>
+        <queue-output value="outputs/static_vehicle_data/static_vehicle_data.xml"/>
+    </output>
+
+    <processing>
+            <lateral-resolution value="0"/>
+    </processing>
 
 </sumoConfiguration>
