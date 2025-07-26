@@ -1,63 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
 
-	 <vTypeDistribution id="v_type_dist_base">
-		 <vType id="Car" vClass="passenger"
-			 guiShape="passenger/sedan" 
-			 probability="0.351771511" minGap="1" minGapLat="0.2"
-			 length="4.2" width="2.1" 
-			 maxSpeed="22.22" 
-			 sigma="0.23424849961615712"
-			 lcStrategic="100.0" lcCooperative="0.9"
-			 latAlignment="nice"/> 
-			 
-		 <vType id="Motor_Cycle" vClass="motorcycle"
-			 guiShape="motorcycle" 
-			 probability="0.308749096" minGap="0.5" minGapLat="0.05"
-			 length="2.0" width="0.9" 
-			 maxSpeed="22.22" 
-			 sigma="0.23424849961615712"
-			 lcStrategic="100.0" lcCooperative="0.9"
-			 latAlignment="compact"/> 
+    <vTypeDistribution id="v_type_dist_base">
 
-		 <vType id="3_Wheeler" vClass="passenger"
-			 guiShape="passenger/hatchback" 
-			 probability="0.187997108" minGap="0.8" minGapLat="0.1"
-			 length="2.55" width="1.5" 
-			 maxSpeed="16.67" 
-			 sigma="0.23424849961615712"
-			 lcStrategic="100.0" lcCooperative="0.9"
-			 latAlignment="compact"/> 
+<vType id="Car" accel="2.4" decel="4.5" vClass="passenger"
+       guiShape="passenger/sedan" probability="0.351771511"
+       minGap="1.5" minGapLat="0.2" length="4.2" width="2.1"
+       maxSpeed="22.22" sigma="0.23424849961615712"
+       lcStrategic="100.0" lcCooperative="0.9" latAlignment="nice"/>
 
-		 <vType id="Van" vClass="passenger"
-			 guiShape="passenger/van" 
-			 probability="0.082067968" minGap="1" minGapLat="0.2"
-			 length="5.3" width="2.10" 
-			 maxSpeed="19.44" 
-			 sigma="0.23424849961615712"
-			 lcStrategic="100.0" lcCooperative="0.9"
-			 latAlignment="nice"/> 
+<vType id="Motor_Cycle" accel="2.8" decel="5.5" vClass="motorcycle"
+       guiShape="motorcycle" probability="0.308749096"
+       minGap="0.5" minGapLat="0.05" length="2.0" width="0.9"
+       maxSpeed="22.22" sigma="0.23424849961615712" lcSublane="1.0"
+       lcStrategic="100.0" lcCooperative="0.5" latAlignment="arbitrary" lcSpeedGain="1.5"/>
 
-		 <vType id="Goods_Vehicle" vClass="truck"
-			 guiShape="truck" 
-			 probability="0.04483008" minGap="1.5" minGapLat="0.2"
-			 length="6.25" width="2.35" 
-			 maxSpeed="13.889" 
-			 sigma="0.23424849961615712"
-			 lcStrategic="100.0" lcCooperative="0.9"
-			 latAlignment="nice"/> 
+<vType id="3_Wheeler" accel="2.0" decel="4.0" vClass="passenger"
+       guiShape="passenger/hatchback" probability="0.187997108" color="green"
+       minGap="0.8" minGapLat="0.1" length="2.55" width="1.5"
+       maxSpeed="16.67" sigma="0.23424849961615712" lcSublane="1.0"
+       lcStrategic="100.0" lcCooperative="0.5" latAlignment="arbitrary" lcSpeedGain="1.5"/>
 
-		 <vType id="Multi_Axle_6_7" vClass="trailer"
-			 guiShape="truck/trailer" 
-			 probability="0.001084599" minGap="1.5" minGapLat="0.2"
-			 length="15.5" width="3.0" 
-			 maxSpeed="11.11" 
-			 sigma="0.23424849961615712"
-			 lcStrategic="100.0" lcCooperative="0.9"
-			 latAlignment="nice"/>
-	 </vTypeDistribution> 
+<vType id="Van" accel="1.8" decel="3.5" vClass="passenger"
+       guiShape="passenger/van" probability="0.082067968"
+       minGap="1" minGapLat="0.2" length="5.3" width="2.10"
+       maxSpeed="19.44" sigma="0.23424849961615712"
+       lcStrategic="100.0" lcCooperative="0.9" latAlignment="nice"/>
+
+<vType id="Goods_Vehicle" accel="1.5" decel="3.2" vClass="truck"
+       guiShape="truck" probability="0.04483008"
+       minGap="1.5" minGapLat="0.2" length="6.25" width="2.35"
+       maxSpeed="13.889" sigma="0.23424849961615712"
+       lcStrategic="100.0" lcCooperative="0.9" latAlignment="nice"/>
+
+<vType id="Multi_Axle_6_7" accel="1.0" decel="2.5" vClass="trailer"
+       guiShape="truck/trailer" probability="0.001084599"
+       minGap="1.5" minGapLat="0.2" length="15.5" width="3.0"
+       maxSpeed="11.11" sigma="0.23424849961615712"
+       lcStrategic="100.0" lcCooperative="0.9" latAlignment="nice"/>
+
+    </vTypeDistribution> 
 </additional>
-
 <!--<?xml version="1.0" encoding="UTF-8"?>
 <additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
 

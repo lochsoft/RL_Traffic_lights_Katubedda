@@ -23,7 +23,7 @@
     </output>
 
     <processing>
-            <lateral-resolution value="0.8"/>
+            <lateral-resolution value="0"/>
     </processing>
 
     <random_number>

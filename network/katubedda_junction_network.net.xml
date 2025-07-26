@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-23 18:40:15 by Eclipse SUMO netedit Version 1.23.1
+<!-- generated on 2025-07-26 16:01:07 by Eclipse SUMO netedit Version 1.23.1
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
+        <additional-files value="C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\additionals\lane_detectors_dynamic.add.xml"/>
         <sumo-net-file value="C:\Users\Lochana Minuwansala\Downloads\Simulation  model\Katubedda Junction\network\katubedda_junction_network.net.xml"/>
     </input>
 
@@ -63,12 +64,12 @@
         <lane id=":1252511599_w1_0" index="0" allow="pedestrian" speed="2.78" length="4.16" width="2.00" shape="437.02,1093.06 437.36,1095.03 435.74,1097.26 433.76,1097.56 433.69,1096.36 433.87,1095.35 434.29,1094.51 434.95,1093.85 435.87,1093.37"/>
     </edge>
     <edge id=":J1_0" function="internal">
-        <lane id=":J1_0_0" index="0" allow="bus" speed="13.89" length="21.17" width="4.20" shape="405.19,1082.92 408.53,1103.35"/>
-        <lane id=":J1_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="21.17" width="3.50" shape="408.94,1082.04 412.33,1102.71"/>
-        <lane id=":J1_0_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="21.17" width="3.00" shape="412.10,1081.30 415.53,1102.16"/>
-        <lane id=":J1_0_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="21.17" width="3.30" shape="412.10,1081.30 418.64,1101.63"/>
-        <lane id=":J1_0_4" index="4" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="21.17" width="3.30" shape="415.17,1080.58 418.64,1101.63"/>
-        <lane id=":J1_0_5" index="5" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="21.17" width="3.00" shape="415.17,1080.58 421.75,1101.10"/>
+        <lane id=":J1_0_0" index="0" allow="bus" speed="13.89" length="21.16" width="4.20" shape="405.19,1082.93 408.53,1103.35"/>
+        <lane id=":J1_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="21.16" width="3.50" shape="408.94,1082.05 412.33,1102.71"/>
+        <lane id=":J1_0_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="21.16" width="3.00" shape="412.10,1081.31 415.53,1102.16"/>
+        <lane id=":J1_0_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="21.16" width="3.30" shape="412.10,1081.31 418.64,1101.63"/>
+        <lane id=":J1_0_4" index="4" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="21.16" width="3.30" shape="415.17,1080.60 418.64,1101.63"/>
+        <lane id=":J1_0_5" index="5" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="21.16" width="3.00" shape="415.17,1080.60 421.75,1101.10"/>
     </edge>
     <edge id=":J1_w0" function="walkingarea">
         <lane id=":J1_w0_0" index="0" allow="pedestrian" speed="2.78" length="20.51" width="2.00" shape="406.45,1103.66 404.49,1104.09 401.20,1083.85 403.15,1083.41"/>
@@ -151,14 +152,14 @@
         <lane id=":KB_Junction_w2_0" index="0" allow="pedestrian" speed="2.78" length="22.89" width="4.00" shape="415.69,1180.63 413.69,1180.72 410.48,1148.81 412.47,1148.56 412.05,1144.54 412.38,1148.53"/>
     </edge>
     <edge id=":KB_to_MRT_001_0" function="internal">
-        <lane id=":KB_to_MRT_001_0_0" index="0" allow="bus" speed="13.89" length="15.91" width="4.20" shape="396.38,1040.64 397.44,1045.13 397.63,1048.32 397.74,1051.53 398.56,1056.09"/>
-        <lane id=":KB_to_MRT_001_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="15.91" width="3.50" shape="399.47,1039.61 400.64,1044.14 401.04,1047.33 401.36,1050.55 402.29,1055.14"/>
-        <lane id=":KB_to_MRT_001_0_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="15.91" width="3.00" shape="399.47,1039.61 405.44,1054.34"/>
-        <lane id=":KB_to_MRT_001_0_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="15.91" width="3.00" shape="402.45,1038.61 403.66,1043.20 404.11,1046.43 404.48,1049.68 405.44,1054.34"/>
-        <lane id=":KB_to_MRT_001_0_4" index="4" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="15.91" width="3.30" shape="402.45,1038.61 408.49,1053.56"/>
+        <lane id=":KB_to_MRT_001_0_0" index="0" allow="bus" speed="13.89" length="15.99" width="4.20" shape="396.38,1040.64 397.44,1045.13 397.63,1048.32 397.74,1051.53 398.56,1056.09"/>
+        <lane id=":KB_to_MRT_001_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="15.99" width="3.50" shape="399.47,1039.61 400.64,1044.14 401.04,1047.33 401.36,1050.55 402.29,1055.14"/>
+        <lane id=":KB_to_MRT_001_0_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="15.99" width="3.00" shape="399.47,1039.61 405.47,1054.46"/>
+        <lane id=":KB_to_MRT_001_0_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="15.99" width="3.00" shape="402.45,1038.61 403.67,1043.24 404.13,1046.49 404.50,1049.77 405.47,1054.46"/>
+        <lane id=":KB_to_MRT_001_0_4" index="4" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="15.99" width="3.30" shape="402.45,1038.61 408.54,1053.73"/>
     </edge>
     <edge id=":KB_to_MRT_001_w0" function="walkingarea">
-        <lane id=":KB_to_MRT_001_w0_0" index="0" allow="pedestrian" speed="2.78" length="15.45" width="2.00" shape="396.52,1056.61 394.59,1057.10 392.82,1041.81 394.73,1041.21 395.53,1044.36 395.80,1046.79 395.78,1048.84 395.72,1050.90 395.89,1053.36"/>
+        <lane id=":KB_to_MRT_001_w0_0" index="0" allow="pedestrian" speed="2.78" length="15.45" width="2.00" shape="396.53,1056.61 394.59,1057.10 392.82,1041.81 394.73,1041.21 395.53,1044.36 395.80,1046.79 395.78,1048.84 395.72,1050.90 395.89,1053.36"/>
     </edge>
 
     <edge id="-30093400.274" from="J5" to="1252511599" name="Kaduwamulla Road" priority="3" type="highway.residential" shape="565.05,1063.37 498.96,1079.39 428.86,1091.19">
@@ -305,19 +306,19 @@
         <param key="ref" value="AA002"/>
     </edge>
     <edge id="MRT_to_KB_001" from="KB_to_MRT_001" to="J1" name="Galle Road" priority="13" type="highway.trunk" spreadType="center" shape="402.34,1055.13 407.27,1074.51 411.62,1093.57">
-        <lane id="MRT_to_KB_001_0" index="0" allow="pedestrian" speed="13.89" length="27.71" width="2.00" shape="395.56,1056.85 400.46,1076.15 402.17,1083.63">
+        <lane id="MRT_to_KB_001_0" index="0" allow="pedestrian" speed="13.89" length="27.66" width="2.00" shape="395.56,1056.86 400.46,1076.15 402.17,1083.63">
             <param key="origId" value="112446386"/>
         </lane>
-        <lane id="MRT_to_KB_001_1" index="1" allow="bus" speed="13.89" length="27.71" width="4.20" shape="398.56,1056.09 403.48,1075.42 405.19,1082.92">
+        <lane id="MRT_to_KB_001_1" index="1" allow="bus" speed="13.89" length="27.66" width="4.20" shape="398.56,1056.09 403.48,1075.42 405.19,1082.93">
             <param key="origId" value="112446386"/>
         </lane>
-        <lane id="MRT_to_KB_001_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="27.71" width="3.50" shape="402.29,1055.14 407.22,1074.52 408.94,1082.04">
+        <lane id="MRT_to_KB_001_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="27.66" width="3.50" shape="402.29,1055.14 407.22,1074.52 408.94,1082.05">
             <param key="origId" value="112446386"/>
         </lane>
-        <lane id="MRT_to_KB_001_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="27.71" width="3.00" shape="405.44,1054.34 410.38,1073.76 412.10,1081.30">
+        <lane id="MRT_to_KB_001_3" index="3" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="27.66" width="3.00" shape="405.47,1054.46 410.38,1073.76 412.10,1081.31">
             <param key="origId" value="112446386"/>
         </lane>
-        <lane id="MRT_to_KB_001_4" index="4" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="27.71" width="3.30" shape="408.49,1053.56 413.44,1073.02 415.17,1080.58">
+        <lane id="MRT_to_KB_001_4" index="4" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship cable_car subway" speed="13.89" length="27.66" width="3.30" shape="408.54,1053.73 413.44,1073.02 415.17,1080.60">
             <param key="origId" value="112446386"/>
         </lane>
         <param key="origTo" value="10605590988"/>
@@ -378,16 +379,6 @@
         <phase duration="4"  state="YYrrrrrOrrrYYrY"/>
         <phase duration="57" state="rGrrrrrOrrrrrrG"/>
         <phase duration="4"  state="rYYYYYYOYYYrYrY"/>
-        <phase duration="24" state="rrGGGGGOGGGrGrr"/>
-        <phase duration="4"  state="rrYGGGGOGGGrGrr"/>
-        <phase duration="52" state="rrrGGGGOGGGrGGr"/>
-        <phase duration="4"  state="rrrYYYYOGGGrYGr"/>
-        <phase duration="27" state="rrrrrrrOGGGrrGr"/>
-        <phase duration="4"  state="rrrrrrrOYYYYYYr"/>
-        <phase duration="51" state="GrrrrrrOrrrGGrr"/>
-        <phase duration="4"  state="YYrrrrrOrrrYYrY"/>
-        <phase duration="57" state="rGrrrrrOrrrrrrG"/>
-        <phase duration="4"  state="rYYYYYYOYYYrYrY"/>
     </tlLogic>
 
     <junction id="1252511599" type="priority" x="428.86" y="1091.19" incLanes="-30093400.274_0 -30093400.274_1 KB_to_MRT_001_0 KB_to_MRT_001_1 KB_to_MRT_001_2 KB_to_MRT_001_3" intLanes=":1252511599_0_0 :1252511599_1_0 :1252511599_2_0 :1252511599_3_0 :1252511599_3_1 :1252511599_3_2" shape="435.63,1084.78 437.36,1095.03 436.33,1095.42 436.00,1095.75 435.79,1096.17 435.70,1096.67 435.74,1097.26 424.07,1099.02 421.62,1085.80 433.14,1083.24 433.60,1084.25 433.97,1084.57 434.43,1084.76 434.98,1084.83">
@@ -399,7 +390,7 @@
         <request index="5" response="000000" foes="000001" cont="0"/>
     </junction>
     <junction id="J0" type="dead_end" x="418.31" y="1402.93" incLanes="KBJ_to_CMB_002_0 KBJ_to_CMB_002_1 KBJ_to_CMB_002_2 KBJ_to_CMB_002_3" intLanes="" shape="412.42,1402.52 424.20,1403.34"/>
-    <junction id="J1" type="priority" x="411.62" y="1093.57" incLanes="MRT_to_KB_001_0 MRT_to_KB_001_1 MRT_to_KB_001_2 MRT_to_KB_001_3 MRT_to_KB_001_4" intLanes=":J1_0_0 :J1_0_1 :J1_0_2 :J1_0_3 :J1_0_4 :J1_0_5" shape="422.97,1100.89 405.10,1103.94 403.45,1096.42 402.99,1091.55 402.09,1083.65 416.54,1080.26 418.45,1085.99 420.24,1091.46 421.81,1096.56" customShape="1">
+    <junction id="J1" type="priority" x="411.62" y="1093.57" incLanes="MRT_to_KB_001_0 MRT_to_KB_001_1 MRT_to_KB_001_2 MRT_to_KB_001_3 MRT_to_KB_001_4" intLanes=":J1_0_0 :J1_0_1 :J1_0_2 :J1_0_3 :J1_0_4 :J1_0_5" shape="422.97,1100.89 405.10,1103.94 403.45,1096.42 402.99,1091.55 402.09,1083.65 416.87,1080.20 418.95,1085.71 420.57,1091.29 422.25,1097.55" customShape="1">
         <request index="0" response="000000" foes="000000" cont="0"/>
         <request index="1" response="000000" foes="000000" cont="0"/>
         <request index="2" response="000000" foes="000000" cont="0"/>
@@ -449,7 +440,7 @@
         <request index="11" response="0000000000000" foes="0010000000111" cont="0"/>
         <request index="12" response="0000000000000" foes="0011111111001" cont="0"/>
     </junction>
-    <junction id="KB_to_MRT_001" type="priority" x="398.54" y="1040.33" incLanes="MRT_to_KB_003_0 MRT_to_KB_003_1 MRT_to_KB_003_2 MRT_to_KB_003_3" intLanes=":KB_to_MRT_001_0_0 :KB_to_MRT_001_0_1 :KB_to_MRT_001_0_2 :KB_to_MRT_001_0_3 :KB_to_MRT_001_0_4" shape="409.51,1053.31 395.17,1056.95 394.72,1054.58 394.76,1051.25 394.70,1047.96 392.96,1041.78 404.14,1038.05" customShape="1">
+    <junction id="KB_to_MRT_001" type="priority" x="398.54" y="1040.33" incLanes="MRT_to_KB_003_0 MRT_to_KB_003_1 MRT_to_KB_003_2 MRT_to_KB_003_3" intLanes=":KB_to_MRT_001_0_0 :KB_to_MRT_001_0_1 :KB_to_MRT_001_0_2 :KB_to_MRT_001_0_3 :KB_to_MRT_001_0_4" shape="410.01,1053.37 395.17,1056.95 394.72,1054.58 394.76,1051.25 394.70,1047.96 392.96,1041.78 404.14,1038.05" customShape="1">
         <request index="0" response="00000" foes="00000" cont="0"/>
         <request index="1" response="00000" foes="00000" cont="0"/>
         <request index="2" response="00000" foes="01000" cont="0"/>

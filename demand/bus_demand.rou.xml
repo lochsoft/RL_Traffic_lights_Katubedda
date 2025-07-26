@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-26 10:46:55.293911 by ptlines2flows.py v1_23_1+0000-676720d13f6
+<!-- generated on 2025-07-26 20:41:42.249040 by ptlines2flows.py v1_23_1+0000-676720d13f6
 <configuration>
     <net-file value="network/katubedda_junction_network.net.xml"/>
     <ptlines-file value="additionals/bus/bus_lines.xml"/>
@@ -24,7 +24,7 @@
     <vType id="ferry" vClass="ship"/>
     <route id="bus_100/101/400/412/418/428/430/433:0" color="1,0,0" edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002" >
         <stop busStop="Kzone_bus_stop" duration="20.0" until="38.0"/> <!-- None -->
-        <stop busStop="KJ_bus_stop" duration="20.0" until="81.0"/> <!-- None -->
+        <stop busStop="KJ_bus_stop" duration="20.0" until="82.0"/> <!-- None -->
         <stop busStop="bs_2" duration="20.0" until="126.0"/> <!-- None -->
         <stop busStop="bs_0" duration="20.0" until="176.0"/> <!-- None -->
     </route>

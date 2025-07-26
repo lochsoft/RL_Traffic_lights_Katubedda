@@ -70,8 +70,7 @@ print("dynamic TL logic running completed!")'''
 # 5. Run multiple simulation runs by changing random seed
 seed = 12345
 random.seed(seed)
-##random_numbers = [random.randint(10000, 99999) for i in range(3)]
-random_numbers = [1,2,3]
+random_numbers = [random.randint(10000, 99999) for i in range(3)]
 comma_sep_string = ",".join(map(str, random_numbers))
 
 # Static Traffic lights
@@ -80,14 +79,20 @@ multiple_runs_static = ("runSeeds.py --configuration simulation_katubedda_juncti
                  f"--seeds {comma_sep_string}")
 subprocess.run(multiple_runs_static, shell=True)
 
-# Dynamic Traffic lights
+# Dynamic Traffic lights - QL
 for seed in random_numbers:
     print(f"\nRunning simulation with seed {seed}")
     cmd = f"python TraciQL.py --seed {seed}"
     subprocess.run(cmd, shell=True)
 
+# Dynamic Traffic lights - DQL
+for seed in random_numbers:
+    print(f"\nRunning simulation with seed {seed}")
+    cmd = f"python TraciDQL.py --seed {seed}"
+    subprocess.run(cmd, shell=True)
+
 # 6. Output processing
-scenarios = ["static_vehicle_data","dynamic_vehicle_data"]
+scenarios = ["static_vehicle_data","dynamic_QL_vehicle_data", "dynamic_DQL_vehicle_data"]
 
 # converting static xml data file to csv
 for scene_folder in scenarios:

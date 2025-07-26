@@ -10,16 +10,6 @@
         <phase duration="4"  state="YYrrrrrOrrrYYrY"/>
         <phase duration="57" state="rGrrrrrOrrrrrrG"/>
         <phase duration="4"  state="rYYYYYYOYYYrYrY"/>
-        <phase duration="24" state="rrGGGGGOGGGrGrr"/>
-        <phase duration="4"  state="rrYGGGGOGGGrGrr"/>
-        <phase duration="52" state="rrrGGGGOGGGrGGr"/>
-        <phase duration="4"  state="rrrYYYYOGGGrYGr"/>
-        <phase duration="27" state="rrrrrrrOGGGrrGr"/>
-        <phase duration="4"  state="rrrrrrrOYYYYYYr"/>
-        <phase duration="51" state="GrrrrrrOrrrGGrr"/>
-        <phase duration="4"  state="YYrrrrrOrrrYYrY"/>
-        <phase duration="57" state="rGrrrrrOrrrrrrG"/>
-        <phase duration="4"  state="rYYYYYYOYYYrYrY"/>
     </tlLogic>
 
 </additionals>

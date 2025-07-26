@@ -16,7 +16,7 @@ if args.seed is not None:
     random.seed(args.seed)
     np.random.seed(args.seed)
 
-def run_traciQL_simulation():  # <--- wrap entire logic here
+def run_traciQL_simulation():
 
     # Step 2: Establish path to SUMO (SUMO_HOME)
     if 'SUMO_HOME' in os.environ:
@@ -28,12 +28,11 @@ def run_traciQL_simulation():  # <--- wrap entire logic here
     # Step 3: Add Traci module to provide access to specific libraries and functions
     import traci
 
-    output_file = f"outputs/dynamic_vehicle_data/{args.seed}.dynamic_vehicle_data.xml"
+    output_file = f"outputs/dynamic_QL_vehicle_data/{args.seed}.dynamic_QL_vehicle_data.xml"
     # Step 4: Define Sumo configuration
     Sumo_config = [
         'sumo',
         '-c', 'simulation_katubedda_junction_dynamic.sumocfg',
-        '--lateral-resolution', '0.8',
         '--queue-output', output_file,
         '--queue-output.period', '300',
         '--random', 'true',
@@ -186,8 +185,7 @@ def run_traciQL_simulation():  # <--- wrap entire logic here
     plt.legend()
     plt.xticks(np.arange(900, 4501, 300))
     plt.grid(True) 
-    plt.savefig(f"outputs/dynamic_vehicle_data/plots/{args.seed}.Cumulative Reward over Steps.png")
-    ##plt.show()
+    plt.savefig(f"outputs/dynamic_QL_vehicle_data/plots/{args.seed}.Cumulative Reward over Steps.png")
 
     plt.figure(figsize=(12, 6))
     plt.plot(step_history, queue_history, linestyle='-', label="Total Queue Length")
@@ -197,8 +195,7 @@ def run_traciQL_simulation():  # <--- wrap entire logic here
     plt.legend()
     plt.xticks(np.arange(900, 4501, 300))
     plt.grid(True)
-    plt.savefig(f"outputs/dynamic_vehicle_data/plots/{args.seed}.Queue Length over Steps.png")
-    ##plt.show()
+    plt.savefig(f"outputs/dynamic_QL_vehicle_data/plots/{args.seed}.Queue Length over Steps.png")
 
 # Allow script to be run directly
 if __name__ == "__main__":
