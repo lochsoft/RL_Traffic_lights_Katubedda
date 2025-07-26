@@ -27,6 +27,7 @@
     </processing>
 
     <random_number>
+        <random value='true'/>
         <seed value="224178"/>
     </random_number>
 

@@ -23,10 +23,11 @@
     </output>
 
     <processing>
-            <lateral-resolution value="0"/>
+            <lateral-resolution value="0.8"/>
     </processing>
 
     <random_number>
+        <random value='true'/>
         <seed value="224178"/>
     </random_number>
 

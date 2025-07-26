@@ -4,56 +4,56 @@
 	 <vTypeDistribution id="v_type_dist_base">
 		 <vType id="Car" vClass="passenger"
 			 guiShape="passenger/sedan" 
-			 probability="0.351771511" minGap="2" minGapLat="1"
+			 probability="0.351771511" minGap="1" minGapLat="0.2"
 			 length="4.2" width="2.1" 
 			 maxSpeed="22.22" 
 			 sigma="0.23424849961615712"
-			 lcStrategic="150.0" lcCooperative="0.9"
+			 lcStrategic="100.0" lcCooperative="0.9"
 			 latAlignment="nice"/> 
 			 
 		 <vType id="Motor_Cycle" vClass="motorcycle"
 			 guiShape="motorcycle" 
-			 probability="0.308749096" minGap="1" minGapLat="1"
+			 probability="0.308749096" minGap="0.5" minGapLat="0.05"
 			 length="2.0" width="0.9" 
 			 maxSpeed="22.22" 
 			 sigma="0.23424849961615712"
-			 lcStrategic="150.0" lcCooperative="0.9"
+			 lcStrategic="100.0" lcCooperative="0.9"
 			 latAlignment="compact"/> 
 
 		 <vType id="3_Wheeler" vClass="passenger"
 			 guiShape="passenger/hatchback" 
-			 probability="0.187997108" minGap="1" minGapLat="1"
+			 probability="0.187997108" minGap="0.8" minGapLat="0.1"
 			 length="2.55" width="1.5" 
 			 maxSpeed="16.67" 
 			 sigma="0.23424849961615712"
-			 lcStrategic="150.0" lcCooperative="0.9"
+			 lcStrategic="100.0" lcCooperative="0.9"
 			 latAlignment="compact"/> 
 
 		 <vType id="Van" vClass="passenger"
 			 guiShape="passenger/van" 
-			 probability="0.082067968" minGap="2" minGapLat="1"
+			 probability="0.082067968" minGap="1" minGapLat="0.2"
 			 length="5.3" width="2.10" 
 			 maxSpeed="19.44" 
 			 sigma="0.23424849961615712"
-			 lcStrategic="150.0" lcCooperative="0.9"
+			 lcStrategic="100.0" lcCooperative="0.9"
 			 latAlignment="nice"/> 
 
 		 <vType id="Goods_Vehicle" vClass="truck"
 			 guiShape="truck" 
-			 probability="0.04483008" minGap="2.5" minGapLat="1"
+			 probability="0.04483008" minGap="1.5" minGapLat="0.2"
 			 length="6.25" width="2.35" 
 			 maxSpeed="13.889" 
 			 sigma="0.23424849961615712"
-			 lcStrategic="150.0" lcCooperative="0.9"
+			 lcStrategic="100.0" lcCooperative="0.9"
 			 latAlignment="nice"/> 
 
 		 <vType id="Multi_Axle_6_7" vClass="trailer"
 			 guiShape="truck/trailer" 
-			 probability="0.001084599" minGap="2.5" minGapLat="1"
+			 probability="0.001084599" minGap="1.5" minGapLat="0.2"
 			 length="15.5" width="3.0" 
 			 maxSpeed="11.11" 
 			 sigma="0.23424849961615712"
-			 lcStrategic="150.0" lcCooperative="0.9"
+			 lcStrategic="100.0" lcCooperative="0.9"
 			 latAlignment="nice"/>
 	 </vTypeDistribution> 
 </additional>

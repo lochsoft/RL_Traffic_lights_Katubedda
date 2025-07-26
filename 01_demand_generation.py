@@ -60,12 +60,12 @@ bus_flows = ("ptlines2flows.py "
 subprocess.run(bus_flows, shell=True)
 
 # 4.Run Simulation - No GUI - Static
-run_simulation_no_gui_static = ("sumo -c simulation_katubedda_junction_static.sumocfg")
-subprocess.run(run_simulation_no_gui_static, shell=True)
+'''run_simulation_no_gui_static = ("sumo -c simulation_katubedda_junction_static.sumocfg")
+subprocess.run(run_simulation_no_gui_static, shell=True)'''
 
 # 4.Run Simulation - No GUI - Dynamic
-run_traciQL_simulation()
-print("dynamic TL logic running completed!")
+'''run_traciQL_simulation()
+print("dynamic TL logic running completed!")'''
 
 # 5. Run multiple simulation runs by changing random seed
 seed = 12345
@@ -80,8 +80,14 @@ multiple_runs_static = ("runSeeds.py --configuration simulation_katubedda_juncti
                  f"--seeds {comma_sep_string}")
 subprocess.run(multiple_runs_static, shell=True)
 
+# Dynamic Traffic lights
+for seed in random_numbers:
+    print(f"\nRunning simulation with seed {seed}")
+    cmd = f"python TraciQL.py --seed {seed}"
+    subprocess.run(cmd, shell=True)
+
 # 6. Output processing
-scenarios = ["static_vehicle_data"]
+scenarios = ["static_vehicle_data","dynamic_vehicle_data"]
 
 # converting static xml data file to csv
 for scene_folder in scenarios:
@@ -100,8 +106,8 @@ for scene_folder in scenarios:
     all_pd.to_csv(f'outputs/{scene_folder}/processed_{scene_folder}.csv', index = False)
 
 # converting dynamic xml data file to csv
-xml_2_csv_call = """python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" outputs\\dynamic_vehicle_data\\dynamic_vehicle_data.xml -s ," """
-subprocess.run(xml_2_csv_call, shell=True)
+'''xml_2_csv_call = """python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" outputs\\dynamic_vehicle_data\\dynamic_vehicle_data.xml -s ," """
+subprocess.run(xml_2_csv_call, shell=True)'''
 
 '''detectors = ["CMB_to_KBJ_001_1", "CMB_to_KBJ_001_2", "CMB_to_KBJ_001_3", "CMB_to_KBJ_001_4", 
              "MRT_to_KB_001.37_2", "MRT_to_KB_001.37_3", "MRT_to_KB_001.37_4", "MRT_to_KB_001.37_5", 
