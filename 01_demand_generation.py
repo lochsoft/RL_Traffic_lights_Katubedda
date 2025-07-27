@@ -82,13 +82,13 @@ subprocess.run(multiple_runs_static, shell=True)
 # Dynamic Traffic lights - QL
 for seed in random_numbers:
     print(f"\nRunning simulation with seed {seed}")
-    cmd = f"python TraciQL.py --seed {seed}"
+    cmd = f"python traciQL.py --seed {seed}"
     subprocess.run(cmd, shell=True)
 
 # Dynamic Traffic lights - DQL
 for seed in random_numbers:
     print(f"\nRunning simulation with seed {seed}")
-    cmd = f"python TraciDQL.py --seed {seed}"
+    cmd = f"python traciDQL.py --seed {seed}"
     subprocess.run(cmd, shell=True)
 
 # 6. Output processing

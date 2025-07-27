@@ -19,7 +19,7 @@
 
     <output>
         <queue-output.period value="300"/>
-        <queue-output value="outputs/dynamic_vehicle_data/dynamic_vehicle_data.xml"/>
+        <queue-output value="outputs/dynamic_QL_vehicle_data/dynamic_QL_vehicle_data.xml"/>
     </output>
 
     <processing>

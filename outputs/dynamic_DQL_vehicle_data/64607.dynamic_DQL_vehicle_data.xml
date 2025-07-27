@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-26 23:48:04 by Eclipse SUMO sumo Version 1.23.1
+<!-- generated on 2025-07-27 10:26:59 by Eclipse SUMO sumo Version 1.23.1
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -19,7 +19,7 @@
     </processing>
 
     <traci_server>
-        <remote-port value="57477"/>
+        <remote-port value="59986"/>
     </traci_server>
 
     <random_number>
@@ -42,200 +42,211 @@
     </data>
     <data timestep="300.00">
         <lanes>
-            <lane id="CMB_to_KBJ_001_1" queueing_time="57.00" queueing_length="8.70" queueing_length_experimental="8.70"/>
-            <lane id="CMB_to_KBJ_001_2" queueing_time="91.00" queueing_length="9.85" queueing_length_experimental="9.85"/>
-            <lane id="CMB_to_KBJ_001_3" queueing_time="83.00" queueing_length="6.30" queueing_length_experimental="6.30"/>
-            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.16"/>
-            <lane id="MRT_to_KB_001.37_2" queueing_time="49.00" queueing_length="24.01" queueing_length_experimental="24.01"/>
-            <lane id="MRT_to_KB_001.37_3" queueing_time="47.00" queueing_length="24.96" queueing_length_experimental="24.96"/>
-            <lane id="MRT_to_KB_001.37_4" queueing_time="42.00" queueing_length="24.06" queueing_length_experimental="24.06"/>
-            <lane id="P_to_KBJ_2" queueing_time="131.00" queueing_length="26.66" queueing_length_experimental="30.12"/>
+            <lane id="CMB_to_KBJ_001_1" queueing_time="56.00" queueing_length="7.70" queueing_length_experimental="7.70"/>
+            <lane id="CMB_to_KBJ_001_2" queueing_time="92.00" queueing_length="8.55" queueing_length_experimental="8.55"/>
+            <lane id="CMB_to_KBJ_001_3" queueing_time="87.00" queueing_length="3.00" queueing_length_experimental="3.00"/>
+            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.15"/>
+            <lane id="MRT_to_KB_001.37_2" queueing_time="61.00" queueing_length="32.96" queueing_length_experimental="32.96"/>
+            <lane id="MRT_to_KB_001.37_3" queueing_time="61.00" queueing_length="32.96" queueing_length_experimental="32.96"/>
+            <lane id="MRT_to_KB_001.37_4" queueing_time="62.00" queueing_length="30.61" queueing_length_experimental="30.61"/>
+            <lane id="P_to_KBJ_2" queueing_time="130.00" queueing_length="32.01" queueing_length_experimental="32.01"/>
         </lanes>
     </data>
     <data timestep="600.00">
         <lanes>
-            <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.96"/>
+            <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.95"/>
             <lane id="MRT_to_KB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="27.56"/>
-            <lane id="MRT_to_KB_001.37_5" queueing_time="121.00" queueing_length="9.30" queueing_length_experimental="9.30"/>
-            <lane id="P_to_KBJ_1" queueing_time="118.00" queueing_length="10.90" queueing_length_experimental="10.90"/>
-            <lane id="P_to_KBJ_2" queueing_time="77.00" queueing_length="9.85" queueing_length_experimental="9.85"/>
+            <lane id="MRT_to_KB_001.37_5" queueing_time="10.00" queueing_length="3.55" queueing_length_experimental="3.55"/>
+            <lane id="P_to_KBJ_1" queueing_time="58.00" queueing_length="3.00" queueing_length_experimental="3.00"/>
+            <lane id="P_to_KBJ_2" queueing_time="65.00" queueing_length="3.00" queueing_length_experimental="3.00"/>
         </lanes>
     </data>
     <data timestep="900.00">
         <lanes>
-            <lane id="CMB_to_KBJ_001_1" queueing_time="57.00" queueing_length="12.60" queueing_length_experimental="12.60"/>
-            <lane id="CMB_to_KBJ_001_2" queueing_time="95.00" queueing_length="8.70" queueing_length_experimental="8.70"/>
-            <lane id="CMB_to_KBJ_001_3" queueing_time="42.00" queueing_length="3.00" queueing_length_experimental="3.00"/>
+            <lane id="CMB_to_KBJ_001_1" queueing_time="60.00" queueing_length="15.00" queueing_length_experimental="15.00"/>
+            <lane id="CMB_to_KBJ_001_2" queueing_time="42.00" queueing_length="9.30" queueing_length_experimental="9.30"/>
             <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.14"/>
-            <lane id="MRT_to_KB_001.37_2" queueing_time="72.00" queueing_length="34.61" queueing_length_experimental="34.61"/>
-            <lane id="MRT_to_KB_001.37_3" queueing_time="67.00" queueing_length="30.21" queueing_length_experimental="30.21"/>
-            <lane id="MRT_to_KB_001.37_4" queueing_time="59.00" queueing_length="31.91" queueing_length_experimental="31.91"/>
-            <lane id="MRT_to_KB_001.37_5" queueing_time="3.00" queueing_length="6.30" queueing_length_experimental="6.30"/>
+            <lane id="MRT_to_KB_001.37_2" queueing_time="65.00" queueing_length="31.76" queueing_length_experimental="31.76"/>
+            <lane id="MRT_to_KB_001.37_3" queueing_time="62.00" queueing_length="31.51" queueing_length_experimental="31.51"/>
+            <lane id="MRT_to_KB_001.37_4" queueing_time="55.00" queueing_length="25.96" queueing_length_experimental="25.96"/>
+            <lane id="P_to_KBJ_2" queueing_time="109.00" queueing_length="39.71" queueing_length_experimental="39.71"/>
         </lanes>
     </data>
     <data timestep="1200.00">
         <lanes>
-            <lane id="CMB_to_KBJ_001_1" queueing_time="8.00" queueing_length="7.25" queueing_length_experimental="7.25"/>
+            <lane id="CMB_to_KBJ_001_1" queueing_time="12.00" queueing_length="5.20" queueing_length_experimental="5.20"/>
             <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.95"/>
             <lane id="MRT_to_KB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="27.56"/>
-            <lane id="MRT_to_KB_001.37_5" queueing_time="70.00" queueing_length="9.65" queueing_length_experimental="9.65"/>
-            <lane id="P_to_KBJ_1" queueing_time="77.00" queueing_length="17.35" queueing_length_experimental="17.35"/>
-            <lane id="P_to_KBJ_2" queueing_time="44.00" queueing_length="8.55" queueing_length_experimental="8.55"/>
+            <lane id="MRT_to_KB_001.37_5" queueing_time="70.00" queueing_length="8.55" queueing_length_experimental="8.55"/>
+            <lane id="P_to_KBJ_1" queueing_time="77.00" queueing_length="11.35" queueing_length_experimental="11.35"/>
+            <lane id="P_to_KBJ_2" queueing_time="48.00" queueing_length="11.05" queueing_length_experimental="11.05"/>
         </lanes>
     </data>
     <data timestep="1500.00">
         <lanes>
-            <lane id="CMB_to_KBJ_001_1" queueing_time="133.00" queueing_length="12.05" queueing_length_experimental="12.05"/>
-            <lane id="CMB_to_KBJ_001_2" queueing_time="87.00" queueing_length="14.85" queueing_length_experimental="14.85"/>
-            <lane id="CMB_to_KBJ_001_3" queueing_time="72.00" queueing_length="7.70" queueing_length_experimental="7.70"/>
-            <lane id="CMB_to_KBJ_001_4" queueing_time="64.00" queueing_length="8.80" queueing_length_experimental="8.80"/>
-            <lane id="MRT_to_KB_001_2" queueing_time="1.00" queueing_length="5.20" queueing_length_experimental="5.20"/>
+            <lane id="CMB_to_KBJ_001_1" queueing_time="120.00" queueing_length="6.90" queueing_length_experimental="6.90"/>
+            <lane id="CMB_to_KBJ_001_2" queueing_time="73.00" queueing_length="10.90" queueing_length_experimental="10.90"/>
+            <lane id="CMB_to_KBJ_001_3" queueing_time="70.00" queueing_length="5.50" queueing_length_experimental="5.50"/>
+            <lane id="CMB_to_KBJ_001_4" queueing_time="65.00" queueing_length="10.90" queueing_length_experimental="10.90"/>
             <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.14"/>
-            <lane id="MRT_to_KB_001.37_2" queueing_time="71.00" queueing_length="38.31" queueing_length_experimental="35.81"/>
-            <lane id="MRT_to_KB_001.37_3" queueing_time="62.00" queueing_length="35.76" queueing_length_experimental="32.41"/>
-            <lane id="MRT_to_KB_001.37_4" queueing_time="54.00" queueing_length="33.71" queueing_length_experimental="33.71"/>
-            <lane id="MRT_to_KB_001.37_5" queueing_time="1.00" queueing_length="13.63" queueing_length_experimental="13.63"/>
-            <lane id="P_to_KBJ_1" queueing_time="8.00" queueing_length="6.30" queueing_length_experimental="6.30"/>
-            <lane id="P_to_KBJ_2" queueing_time="66.00" queueing_length="60.46" queueing_length_experimental="60.46"/>
+            <lane id="MRT_to_KB_001.37_2" queueing_time="56.00" queueing_length="34.01" queueing_length_experimental="34.01"/>
+            <lane id="MRT_to_KB_001.37_3" queueing_time="60.00" queueing_length="32.81" queueing_length_experimental="32.81"/>
+            <lane id="MRT_to_KB_001.37_4" queueing_time="53.00" queueing_length="31.21" queueing_length_experimental="31.21"/>
+            <lane id="P_to_KBJ_2" queueing_time="137.00" queueing_length="72.81" queueing_length_experimental="72.81"/>
         </lanes>
     </data>
     <data timestep="1800.00">
         <lanes>
-            <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.95"/>
+            <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.96"/>
             <lane id="MRT_to_KB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="27.56"/>
-            <lane id="MRT_to_KB_001.37_5" queueing_time="41.00" queueing_length="5.50" queueing_length_experimental="5.50"/>
-            <lane id="P_to_KBJ_1" queueing_time="84.00" queueing_length="17.50" queueing_length_experimental="17.50"/>
-            <lane id="P_to_KBJ_2" queueing_time="36.00" queueing_length="11.35" queueing_length_experimental="11.35"/>
+            <lane id="MRT_to_KB_001.37_5" queueing_time="36.00" queueing_length="10.90" queueing_length_experimental="10.90"/>
+            <lane id="P_to_KBJ_1" queueing_time="85.00" queueing_length="16.90" queueing_length_experimental="16.90"/>
+            <lane id="P_to_KBJ_2" queueing_time="56.00" queueing_length="32.71" queueing_length_experimental="35.21"/>
         </lanes>
     </data>
     <data timestep="2100.00">
         <lanes>
-            <lane id="CMB_to_KBJ_001_1" queueing_time="86.00" queueing_length="20.96" queueing_length_experimental="20.96"/>
-            <lane id="CMB_to_KBJ_001_2" queueing_time="63.00" queueing_length="10.90" queueing_length_experimental="10.90"/>
-            <lane id="CMB_to_KBJ_001_3" queueing_time="64.00" queueing_length="11.75" queueing_length_experimental="11.75"/>
-            <lane id="CMB_to_KBJ_001_4" queueing_time="47.00" queueing_length="7.70" queueing_length_experimental="7.70"/>
-            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.14"/>
-            <lane id="MRT_to_KB_001.37_2" queueing_time="62.00" queueing_length="34.01" queueing_length_experimental="31.51"/>
-            <lane id="MRT_to_KB_001.37_3" queueing_time="57.00" queueing_length="35.31" queueing_length_experimental="35.31"/>
-            <lane id="MRT_to_KB_001.37_4" queueing_time="57.00" queueing_length="36.81" queueing_length_experimental="31.11"/>
-            <lane id="MRT_to_KB_001.37_5" queueing_time="3.00" queueing_length="39.81" queueing_length_experimental="0.00"/>
-            <lane id="P_to_KBJ_2" queueing_time="164.00" queueing_length="87.92" queueing_length_experimental="87.92"/>
+            <lane id="CMB_to_KBJ_001_1" queueing_time="85.00" queueing_length="26.51" queueing_length_experimental="23.16"/>
+            <lane id="CMB_to_KBJ_001_2" queueing_time="62.00" queueing_length="9.75" queueing_length_experimental="9.75"/>
+            <lane id="CMB_to_KBJ_001_3" queueing_time="63.00" queueing_length="8.55" queueing_length_experimental="8.55"/>
+            <lane id="CMB_to_KBJ_001_4" queueing_time="46.00" queueing_length="8.85" queueing_length_experimental="8.85"/>
+            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.15"/>
+            <lane id="MRT_to_KB_001.37_2" queueing_time="42.00" queueing_length="30.41" queueing_length_experimental="30.41"/>
+            <lane id="MRT_to_KB_001.37_3" queueing_time="45.00" queueing_length="28.16" queueing_length_experimental="28.16"/>
+            <lane id="MRT_to_KB_001.37_4" queueing_time="45.00" queueing_length="23.46" queueing_length_experimental="29.16"/>
+            <lane id="P_to_KBJ_1" queueing_time="142.00" queueing_length="51.79" queueing_length_experimental="51.79"/>
+            <lane id="P_to_KBJ_2" queueing_time="150.00" queueing_length="121.33" queueing_length_experimental="98.62"/>
         </lanes>
     </data>
     <data timestep="2400.00">
         <lanes>
             <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.96"/>
             <lane id="MRT_to_KB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="27.56"/>
-            <lane id="MRT_to_KB_001.37_5" queueing_time="87.00" queueing_length="32.00" queueing_length_experimental="32.00"/>
-            <lane id="P_to_KBJ_1" queueing_time="34.00" queueing_length="12.65" queueing_length_experimental="12.65"/>
-            <lane id="P_to_KBJ_2" queueing_time="57.00" queueing_length="63.07" queueing_length_experimental="63.07"/>
+            <lane id="MRT_to_KB_001.37_5" queueing_time="31.00" queueing_length="10.90" queueing_length_experimental="10.90"/>
+            <lane id="P_to_KBJ_1" queueing_time="58.00" queueing_length="40.52" queueing_length_experimental="40.52"/>
+            <lane id="P_to_KBJ_2" queueing_time="41.00" queueing_length="118.28" queueing_length_experimental="101.17"/>
         </lanes>
     </data>
     <data timestep="2700.00">
         <lanes>
-            <lane id="CMB_to_KBJ_001_1" queueing_time="119.00" queueing_length="19.10" queueing_length_experimental="19.10"/>
-            <lane id="CMB_to_KBJ_001_2" queueing_time="53.00" queueing_length="12.65" queueing_length_experimental="12.65"/>
-            <lane id="CMB_to_KBJ_001_3" queueing_time="49.00" queueing_length="5.20" queueing_length_experimental="5.20"/>
-            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.15"/>
-            <lane id="MRT_to_KB_001.37_2" queueing_time="53.00" queueing_length="20.86" queueing_length_experimental="20.86"/>
-            <lane id="MRT_to_KB_001.37_3" queueing_time="48.00" queueing_length="25.01" queueing_length_experimental="25.01"/>
-            <lane id="MRT_to_KB_001.37_4" queueing_time="46.00" queueing_length="33.61" queueing_length_experimental="33.61"/>
-            <lane id="P_to_KBJ_1" queueing_time="142.00" queueing_length="41.51" queueing_length_experimental="41.51"/>
-            <lane id="P_to_KBJ_2" queueing_time="156.00" queueing_length="120.53" queueing_length_experimental="100.18"/>
+            <lane id="CMB_to_KBJ_001_1" queueing_time="92.00" queueing_length="17.50" queueing_length_experimental="17.50"/>
+            <lane id="CMB_to_KBJ_001_2" queueing_time="50.00" queueing_length="11.75" queueing_length_experimental="11.75"/>
+            <lane id="CMB_to_KBJ_001_3" queueing_time="47.00" queueing_length="3.55" queueing_length_experimental="3.55"/>
+            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.14"/>
+            <lane id="MRT_to_KB_001.37_2" queueing_time="38.00" queueing_length="15.45" queueing_length_experimental="15.45"/>
+            <lane id="MRT_to_KB_001.37_3" queueing_time="40.00" queueing_length="14.10" queueing_length_experimental="14.10"/>
+            <lane id="MRT_to_KB_001.37_4" queueing_time="31.00" queueing_length="17.35" queueing_length_experimental="17.35"/>
+            <lane id="P_to_KBJ_1" queueing_time="142.00" queueing_length="129.60" queueing_length_experimental="100.49"/>
+            <lane id="P_to_KBJ_2" queueing_time="140.00" queueing_length="129.83" queueing_length_experimental="101.02"/>
         </lanes>
     </data>
     <data timestep="3000.00">
         <lanes>
-            <lane id=":KB_Junction_2_0" queueing_time="16.00" queueing_length="6.17" queueing_length_experimental="6.17"/>
-            <lane id="CMB_to_KBJ_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="3.61"/>
-            <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.96"/>
+            <lane id=":KB_Junction_2_0" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="3.47"/>
+            <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.95"/>
             <lane id="MRT_to_KB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="27.56"/>
-            <lane id="MRT_to_KB_001.37_5" queueing_time="6.00" queueing_length="12.95" queueing_length_experimental="19.32"/>
-            <lane id="P_to_KBJ_1" queueing_time="54.00" queueing_length="123.73" queueing_length_experimental="32.86"/>
-            <lane id="P_to_KBJ_2" queueing_time="51.00" queueing_length="124.63" queueing_length_experimental="100.47"/>
+            <lane id="MRT_to_KB_001.37_5" queueing_time="6.00" queueing_length="5.20" queueing_length_experimental="5.20"/>
+            <lane id="P_to_KBJ_1" queueing_time="52.00" queueing_length="132.19" queueing_length_experimental="36.68"/>
+            <lane id="P_to_KBJ_2" queueing_time="32.00" queueing_length="100.29" queueing_length_experimental="100.29"/>
         </lanes>
     </data>
     <data timestep="3300.00">
         <lanes>
-            <lane id="CMB_to_KBJ_001_1" queueing_time="111.00" queueing_length="22.21" queueing_length_experimental="22.21"/>
-            <lane id="CMB_to_KBJ_001_2" queueing_time="63.00" queueing_length="15.60" queueing_length_experimental="15.60"/>
-            <lane id="CMB_to_KBJ_001_3" queueing_time="1.00" queueing_length="3.01" queueing_length_experimental="3.01"/>
-            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.15"/>
-            <lane id="MRT_to_KB_001.37_2" queueing_time="31.00" queueing_length="27.46" queueing_length_experimental="27.46"/>
-            <lane id="MRT_to_KB_001.37_3" queueing_time="28.00" queueing_length="23.30" queueing_length_experimental="33.19"/>
-            <lane id="MRT_to_KB_001.37_4" queueing_time="23.00" queueing_length="19.50" queueing_length_experimental="25.22"/>
-            <lane id="P_to_KBJ_1" queueing_time="133.00" queueing_length="127.15" queueing_length_experimental="99.85"/>
-            <lane id="P_to_KBJ_2" queueing_time="149.00" queueing_length="132.38" queueing_length_experimental="103.23"/>
+            <lane id="CMB_to_KBJ_001_1" queueing_time="72.00" queueing_length="18.95" queueing_length_experimental="18.95"/>
+            <lane id="CMB_to_KBJ_001_2" queueing_time="22.00" queueing_length="5.20" queueing_length_experimental="5.20"/>
+            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.16"/>
+            <lane id="MRT_to_KB_001.37_2" queueing_time="27.00" queueing_length="19.70" queueing_length_experimental="22.51"/>
+            <lane id="MRT_to_KB_001.37_3" queueing_time="18.00" queueing_length="19.41" queueing_length_experimental="19.41"/>
+            <lane id="MRT_to_KB_001.37_4" queueing_time="13.00" queueing_length="16.60" queueing_length_experimental="16.60"/>
+            <lane id="P_to_KBJ_1" queueing_time="95.00" queueing_length="131.37" queueing_length_experimental="101.52"/>
+            <lane id="P_to_KBJ_2" queueing_time="129.00" queueing_length="131.44" queueing_length_experimental="101.93"/>
         </lanes>
     </data>
     <data timestep="3600.00">
         <lanes>
-            <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.95"/>
+            <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.96"/>
             <lane id="MRT_to_KB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="27.56"/>
-            <lane id="MRT_to_KB_001.37_5" queueing_time="12.00" queueing_length="12.65" queueing_length_experimental="12.65"/>
-            <lane id="MRT_to_KB_003_1" queueing_time="2.00" queueing_length="25.83" queueing_length_experimental="25.83"/>
-            <lane id="MRT_to_KB_003_2" queueing_time="1.00" queueing_length="31.14" queueing_length_experimental="0.00"/>
-            <lane id="MRT_to_KB_003_3" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="28.72"/>
-            <lane id="P_to_KBJ_1" queueing_time="55.00" queueing_length="132.30" queueing_length_experimental="20.55"/>
-            <lane id="P_to_KBJ_2" queueing_time="46.00" queueing_length="114.38" queueing_length_experimental="101.97"/>
+            <lane id="MRT_to_KB_001_2" queueing_time="71.00" queueing_length="25.81" queueing_length_experimental="20.81"/>
+            <lane id="MRT_to_KB_001_3" queueing_time="75.00" queueing_length="23.31" queueing_length_experimental="19.95"/>
+            <lane id="MRT_to_KB_001_4" queueing_time="48.00" queueing_length="20.78" queueing_length_experimental="20.78"/>
+            <lane id="MRT_to_KB_001.37_4" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="29.78"/>
+            <lane id="MRT_to_KB_001.37_5" queueing_time="24.00" queueing_length="40.00" queueing_length_experimental="33.14"/>
+            <lane id="MRT_to_KB_003_1" queueing_time="1.00" queueing_length="11.93" queueing_length_experimental="11.93"/>
+            <lane id="MRT_to_KB_003_2" queueing_time="50.00" queueing_length="34.17" queueing_length_experimental="25.96"/>
+            <lane id="MRT_to_KB_003_3" queueing_time="6.00" queueing_length="13.07" queueing_length_experimental="13.07"/>
+            <lane id="P_to_KBJ_1" queueing_time="46.00" queueing_length="125.43" queueing_length_experimental="31.28"/>
+            <lane id="P_to_KBJ_2" queueing_time="14.00" queueing_length="44.16" queueing_length_experimental="50.30"/>
         </lanes>
     </data>
     <data timestep="3900.00">
         <lanes>
-            <lane id="CMB_to_KBJ_001_1" queueing_time="98.00" queueing_length="20.26" queueing_length_experimental="20.26"/>
-            <lane id="CMB_to_KBJ_001_2" queueing_time="56.00" queueing_length="15.40" queueing_length_experimental="15.40"/>
-            <lane id="CMB_to_KBJ_001_3" queueing_time="46.00" queueing_length="9.25" queueing_length_experimental="9.25"/>
-            <lane id="CMB_to_KBJ_001_4" queueing_time="29.00" queueing_length="5.50" queueing_length_experimental="5.50"/>
-            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.15"/>
-            <lane id="MRT_to_KB_001.37_2" queueing_time="34.00" queueing_length="36.06" queueing_length_experimental="30.36"/>
-            <lane id="MRT_to_KB_001.37_3" queueing_time="37.00" queueing_length="36.61" queueing_length_experimental="33.26"/>
-            <lane id="MRT_to_KB_001.37_4" queueing_time="35.00" queueing_length="34.31" queueing_length_experimental="31.81"/>
-            <lane id="P_to_KBJ_1" queueing_time="56.00" queueing_length="128.28" queueing_length_experimental="100.58"/>
-            <lane id="P_to_KBJ_2" queueing_time="141.00" queueing_length="130.98" queueing_length_experimental="99.82"/>
+            <lane id="CMB_to_KBJ_001_1" queueing_time="65.00" queueing_length="11.75" queueing_length_experimental="11.75"/>
+            <lane id="CMB_to_KBJ_001_2" queueing_time="28.00" queueing_length="11.30" queueing_length_experimental="11.30"/>
+            <lane id="CMB_to_KBJ_001_3" queueing_time="8.00" queueing_length="3.00" queueing_length_experimental="3.00"/>
+            <lane id="CMB_to_KBJ_001_4" queueing_time="3.00" queueing_length="5.20" queueing_length_experimental="5.20"/>
+            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.14"/>
+            <lane id="MRT_to_KB_001.37_2" queueing_time="3.00" queueing_length="3.55" queueing_length_experimental="3.55"/>
+            <lane id="MRT_to_KB_001.37_3" queueing_time="4.00" queueing_length="3.00" queueing_length_experimental="3.00"/>
+            <lane id="MRT_to_KB_001.37_4" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="3.57"/>
+            <lane id="MRT_to_KB_001.37_5" queueing_time="59.00" queueing_length="34.86" queueing_length_experimental="34.86"/>
+            <lane id="P_to_KBJ_1" queueing_time="123.00" queueing_length="131.03" queueing_length_experimental="102.22"/>
+            <lane id="P_to_KBJ_2" queueing_time="109.00" queueing_length="129.73" queueing_length_experimental="99.72"/>
         </lanes>
     </data>
     <data timestep="4200.00">
         <lanes>
-            <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.95"/>
+            <lane id=":J37_0_0" queueing_time="41.00" queueing_length="9.56" queueing_length_experimental="9.56"/>
+            <lane id=":J37_0_1" queueing_time="46.00" queueing_length="19.71" queueing_length_experimental="14.01"/>
+            <lane id=":J37_0_2" queueing_time="19.00" queueing_length="15.61" queueing_length_experimental="13.11"/>
+            <lane id="CMB_to_KBJ_001_1" queueing_time="163.00" queueing_length="28.46" queueing_length_experimental="20.70"/>
+            <lane id="CMB_to_KBJ_001_2" queueing_time="119.00" queueing_length="31.70" queueing_length_experimental="31.70"/>
+            <lane id="CMB_to_KBJ_001_3" queueing_time="114.00" queueing_length="32.86" queueing_length_experimental="22.61"/>
+            <lane id="CMB_to_KBJ_001_4" queueing_time="110.00" queueing_length="28.01" queueing_length_experimental="22.30"/>
+            <lane id="KBJ_to_CMB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="24.98"/>
             <lane id="MRT_to_KB_001_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="27.56"/>
-            <lane id="MRT_to_KB_001.37_5" queueing_time="5.00" queueing_length="10.75" queueing_length_experimental="10.75"/>
-            <lane id="MRT_to_KB_003_1" queueing_time="14.00" queueing_length="29.46" queueing_length_experimental="29.46"/>
-            <lane id="MRT_to_KB_003_2" queueing_time="2.00" queueing_length="31.69" queueing_length_experimental="25.64"/>
-            <lane id="MRT_to_KB_003_3" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="23.60"/>
-            <lane id="P_to_KBJ_1" queueing_time="165.00" queueing_length="131.56" queueing_length_experimental="44.46"/>
-            <lane id="P_to_KBJ_2" queueing_time="36.00" queueing_length="128.26" queueing_length_experimental="99.27"/>
+            <lane id="MRT_to_KB_001_2" queueing_time="63.00" queueing_length="23.61" queueing_length_experimental="23.61"/>
+            <lane id="MRT_to_KB_001_3" queueing_time="59.00" queueing_length="25.61" queueing_length_experimental="23.10"/>
+            <lane id="MRT_to_KB_001_4" queueing_time="39.00" queueing_length="27.31" queueing_length_experimental="21.61"/>
+            <lane id="MRT_to_KB_001.37_2" queueing_time="102.00" queueing_length="40.09" queueing_length_experimental="34.39"/>
+            <lane id="MRT_to_KB_001.37_3" queueing_time="99.00" queueing_length="38.16" queueing_length_experimental="35.66"/>
+            <lane id="MRT_to_KB_001.37_4" queueing_time="97.00" queueing_length="40.76" queueing_length_experimental="33.01"/>
+            <lane id="MRT_to_KB_001.37_5" queueing_time="53.00" queueing_length="39.95" queueing_length_experimental="34.25"/>
+            <lane id="MRT_to_KB_003_1" queueing_time="24.00" queueing_length="31.80" queueing_length_experimental="28.45"/>
+            <lane id="MRT_to_KB_003_2" queueing_time="46.00" queueing_length="32.71" queueing_length_experimental="29.36"/>
+            <lane id="MRT_to_KB_003_3" queueing_time="25.00" queueing_length="29.21" queueing_length_experimental="29.21"/>
+            <lane id="P_to_KBJ_1" queueing_time="75.00" queueing_length="129.51" queueing_length_experimental="97.77"/>
+            <lane id="P_to_KBJ_2" queueing_time="149.00" queueing_length="130.89" queueing_length_experimental="98.45"/>
         </lanes>
     </data>
     <data timestep="4500.00">
         <lanes>
-            <lane id="CMB_to_KBJ_001_1" queueing_time="99.00" queueing_length="11.30" queueing_length_experimental="11.30"/>
-            <lane id="CMB_to_KBJ_001_2" queueing_time="43.00" queueing_length="27.31" queueing_length_experimental="24.81"/>
-            <lane id="CMB_to_KBJ_001_3" queueing_time="36.00" queueing_length="9.65" queueing_length_experimental="9.65"/>
-            <lane id="CMB_to_KBJ_001_4" queueing_time="16.00" queueing_length="9.75" queueing_length_experimental="9.75"/>
-            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.14"/>
-            <lane id="MRT_to_KB_001.37_2" queueing_time="28.00" queueing_length="23.06" queueing_length_experimental="23.06"/>
-            <lane id="MRT_to_KB_001.37_3" queueing_time="32.00" queueing_length="25.81" queueing_length_experimental="25.81"/>
-            <lane id="MRT_to_KB_001.37_4" queueing_time="30.00" queueing_length="14.25" queueing_length_experimental="19.99"/>
-            <lane id="P_to_KBJ_1" queueing_time="20.00" queueing_length="81.91" queueing_length_experimental="92.39"/>
-            <lane id="P_to_KBJ_2" queueing_time="133.00" queueing_length="129.73" queueing_length_experimental="102.43"/>
+            <lane id="CMB_to_KBJ_001_1" queueing_time="30.00" queueing_length="6.05" queueing_length_experimental="6.05"/>
+            <lane id="CMB_to_KBJ_001_2" queueing_time="17.00" queueing_length="11.90" queueing_length_experimental="17.67"/>
+            <lane id="CMB_to_KBJ_001_3" queueing_time="15.00" queueing_length="5.20" queueing_length_experimental="5.20"/>
+            <lane id="CMB_to_KBJ_001_4" queueing_time="7.00" queueing_length="5.20" queueing_length_experimental="5.20"/>
+            <lane id="KBJ_to_CMB_002_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="33.26"/>
+            <lane id="MRT_to_KB_001.37_1" queueing_time="0.00" queueing_length="0.00" queueing_length_experimental="15.15"/>
+            <lane id="MRT_to_KB_001.37_5" queueing_time="62.00" queueing_length="33.86" queueing_length_experimental="33.86"/>
+            <lane id="P_to_KBJ_1" queueing_time="124.00" queueing_length="131.10" queueing_length_experimental="99.92"/>
+            <lane id="P_to_KBJ_2" queueing_time="99.00" queueing_length="130.48" queueing_length_experimental="99.88"/>
         </lanes>
     </data>
     <data timestep="4800.00">
         <lanes>
-            <lane id="P_to_KBJ_1" queueing_time="57.00" queueing_length="124.87" queueing_length_experimental="78.42"/>
-            <lane id="P_to_KBJ_2" queueing_time="30.00" queueing_length="62.62" queueing_length_experimental="86.54"/>
+            <lane id="P_to_KBJ_1" queueing_time="22.00" queueing_length="108.60" queueing_length_experimental="102.29"/>
+            <lane id="P_to_KBJ_2" queueing_time="158.00" queueing_length="130.88" queueing_length_experimental="99.76"/>
         </lanes>
     </data>
     <data timestep="5100.00">
         <lanes>
-            <lane id="P_to_KBJ_1" queueing_time="1.00" queueing_length="16.41" queueing_length_experimental="16.41"/>
-            <lane id="P_to_KBJ_2" queueing_time="129.00" queueing_length="130.98" queueing_length_experimental="99.83"/>
+            <lane id="P_to_KBJ_1" queueing_time="95.00" queueing_length="129.87" queueing_length_experimental="103.66"/>
+            <lane id="P_to_KBJ_2" queueing_time="95.00" queueing_length="128.77" queueing_length_experimental="100.22"/>
         </lanes>
     </data>
     <data timestep="5400.00">
         <lanes>
-            <lane id="P_to_KBJ_1" queueing_time="91.00" queueing_length="130.68" queueing_length_experimental="31.06"/>
-            <lane id="P_to_KBJ_2" queueing_time="26.00" queueing_length="80.92" queueing_length_experimental="90.67"/>
+            <lane id="P_to_KBJ_1" queueing_time="15.00" queueing_length="67.12" queueing_length_experimental="69.64"/>
+            <lane id="P_to_KBJ_2" queueing_time="151.00" queueing_length="130.63" queueing_length_experimental="100.51"/>
         </lanes>
     </data>
 </queue-export>

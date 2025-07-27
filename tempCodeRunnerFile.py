@@ -1,12 +1,16 @@
-import subprocess
-import sys
-import os
-os.chdir("c:\\Users\\Lochana Minuwansala\\Downloads\\Simulation  model\\Katubedda Junction")
-random_numbers = [1,2,3]
+seed = 12345
+random.seed(seed)
+random_numbers = [random.randint(10000, 99999) for i in range(3)]
 comma_sep_string = ",".join(map(str, random_numbers))
-custom_run_seeds_script = "runSeedsDynamic.py"
-multiple_runs_dynamic = (
-    f"{sys.executable} {custom_run_seeds_script} traciQL.py "
-    f"--specific-seeds {comma_sep_string}"
-)
-subprocess.run(multiple_runs_dynamic)
+
+# Static Traffic lights
+multiple_runs_static = ("runSeeds.py --configuration simulation_katubedda_junction_static.sumocfg "
+                 "--verbose "
+                 f"--seeds {comma_sep_string}")
+subprocess.run(multiple_runs_static, shell=True)
+
+# Dynamic Traffic lights - QL
+for seed in random_numbers:
+    print(f"\nRunning simulation with seed {seed}")
+    cmd = f"python traciQL.py --seed {seed}"
+    subprocess.run(cmd, shell=True)
