@@ -9,8 +9,7 @@
         <net-file value="network/katubedda_junction_network.net.xml"/>
         <route-files value="demand/calibrated_demand_warmup.rou.xml,
                             demand/calibrated_demand_6am_7am.rou.xml,
-                            demand/bus_demand.rou.xml,
-                            demand/person_flow.rou.xml"/>
+                            demand/bus_demand.rou.xml"/>
         <additional-files value="additionals/bus/bus_stops.add.xml,
                                 additionals/lane_detectors_dynamic.add.xml,
                                 additionals/vtype_dist_base.xml"/>
@@ -20,15 +19,12 @@
     <output>
         <queue-output.period value="300"/>
         <queue-output value="outputs/dynamic_QL_vehicle_data/dynamic_QL_vehicle_data.xml"/>
+        <tripinfo-output value="outputs/dynamic_QL_vehicle_data/tripinfo_dynamic.xml"/>
     </output>
 
     <processing>
-            <lateral-resolution value="0"/>
+            <lateral-resolution value="1.2"/>
+            <collision.action value="none"/>
     </processing>
-
-    <random_number>
-        <random value='true'/>
-        <seed value="224178"/>
-    </random_number>
 
 </sumoConfiguration>

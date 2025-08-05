@@ -1,4 +1,227 @@
-# Step 1: Add modules to provide access to specific libraries and functions
+# dqn_katubedda.py
+import os, sys, argparse, random, math, collections, time
+import numpy as np
+import matplotlib.pyplot as plt
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--seed", type=int, default=224178)
+parser.add_argument("--episodes", type=int, default=1)        # 1 long episode is fine; increase if you want resets
+parser.add_argument("--max_steps", type=int, default=6000)    # safety cap
+parser.add_argument("--min_green", type=int, default=30)
+parser.add_argument("--switch_penalty", type=float, default=2.0)
+parser.add_argument("--lr", type=float, default=1e-3)
+parser.add_argument("--gamma", type=float, default=0.99)
+parser.add_argument("--batch_size", type=int, default=128)
+parser.add_argument("--buffer_size", type=int, default=50000)
+parser.add_argument("--start_epsilon", type=float, default=0.3)
+parser.add_argument("--end_epsilon", type=float, default=0.05)
+parser.add_argument("--epsilon_decay_steps", type=int, default=3000)
+parser.add_argument("--target_update", type=int, default=500) # steps between target sync
+args = parser.parse_args()
+
+# ----- Reproducibility -----
+random.seed(args.seed); np.random.seed(args.seed)
+
+# ----- SUMO tools path -----
+if 'SUMO_HOME' in os.environ:
+    tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
+    sys.path.append(tools)
+else:
+    sys.exit("Please declare environment variable 'SUMO_HOME'")
+import traci
+
+# ----- PyTorch imports -----
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
+ACTIONS = [0, 1]  # 0 = keep phase, 1 = switch phase
+
+class ReplayBuffer:
+    def __init__(self, capacity):
+        self.buf = collections.deque(maxlen=capacity)
+    def push(self, s, a, r, ns, d):
+        self.buf.append((s, a, r, ns, d))
+    def sample(self, bs):
+        batch = random.sample(self.buf, bs)
+        s, a, r, ns, d = map(np.array, zip(*batch))
+        return (torch.as_tensor(s, dtype=torch.float32),
+                torch.as_tensor(a, dtype=torch.int64),
+                torch.as_tensor(r, dtype=torch.float32),
+                torch.as_tensor(ns, dtype=torch.float32),
+                torch.as_tensor(d, dtype=torch.float32))
+    def __len__(self): return len(self.buf)
+
+class QNet(nn.Module):
+    def __init__(self, in_dim, n_actions):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(in_dim, 128), nn.ReLU(),
+            nn.Linear(128, 128), nn.ReLU(),
+            nn.Linear(128, n_actions)
+        )
+    def forward(self, x): return self.net(x)
+
+def make_output_dir():
+    out_dir = f"outputs/dynamic_DQL_vehicle_data"
+    os.makedirs(out_dir, exist_ok=True)
+    os.makedirs(f"{out_dir}/plots", exist_ok=True)
+    return out_dir
+
+def start_sumo(seed, out_dir):
+    queue_xml = f"{out_dir}/{args.seed}.dynamic_DQL_vehicle_data.xml"
+    trip_xml  = f"{out_dir}/{args.seed}.tripinfo_dynamic_DQL_vehicle_data.xml"
+    cfg = [
+        "sumo",
+        "-c", "simulation_katubedda_junction_dynamic.sumocfg",
+        "--queue-output", queue_xml,
+        "--queue-output.period", "300",
+        "--tripinfo-output", trip_xml,
+        "--seed", str(seed)
+    ]
+    traci.start(cfg)
+
+def get_phase_count(tls_id="KB_Junction"):
+    program = traci.trafficlight.getAllProgramLogics(tls_id)[0]
+    return len(program.phases)
+
+def get_state_vec(det_ids, phases, last_switch_step, step):
+    # queues
+    q = np.array([traci.lanearea.getLastStepVehicleNumber(d) for d in det_ids], dtype=np.float32)
+    # normalize queues by a rough cap to stabilize (use 20 as typical lane queue cap; tune if needed)
+    q_norm = np.clip(q / 20.0, 0.0, 1.5)
+
+    current_phase = traci.trafficlight.getPhase("KB_Junction")
+    phase_one_hot = np.zeros(phases, dtype=np.float32)
+    phase_one_hot[current_phase] = 1.0
+
+    time_since_switch = max(0, step - last_switch_step)
+    t_norm = np.array([min(time_since_switch / 60.0, 5.0)], dtype=np.float32)  # 0..~5 (≈ up to 300s)
+
+    state = np.concatenate([q_norm, phase_one_hot, t_norm], axis=0)
+    return state
+
+def main():
+    out_dir = make_output_dir()
+    start_sumo(args.seed, out_dir)
+
+    det_ids = [
+        "CMB_to_KBJ_001_1","CMB_to_KBJ_001_2","CMB_to_KBJ_001_3","CMB_to_KBJ_001_4",
+        "MRT_to_KB_001.37_2","MRT_to_KB_001.37_3","MRT_to_KB_001.37_4","MRT_to_KB_001.37_5",
+        "P_to_KBJ_1","P_to_KBJ_2"
+    ]
+    phases = get_phase_count("KB_Junction")
+
+    in_dim = len(det_ids) + phases + 1
+    n_actions = len(ACTIONS)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    online = QNet(in_dim, n_actions).to(device)
+    target = QNet(in_dim, n_actions).to(device)
+    target.load_state_dict(online.state_dict())
+    optimizer = optim.Adam(online.parameters(), lr=args.lr)
+    buffer = ReplayBuffer(args.buffer_size)
+
+    epsilon = args.start_epsilon
+    eps_decay = (args.start_epsilon - args.end_epsilon) / max(1, args.epsilon_decay_steps)
+
+    min_green = args.min_green
+    last_switch_step = -min_green
+
+    step_global = 0
+    reward_hist, queue_hist, step_hist = [], [], []
+
+    print("\n=== Starting Double DQN ===")
+    for ep in range(args.episodes):
+        step = 0
+        # episode runs until no vehicles are left or cap reached
+        while traci.simulation.getMinExpectedNumber() > 0:
+            state = get_state_vec(det_ids, phases, last_switch_step, step)
+            # ε-greedy
+            if random.random() < epsilon:
+                action = random.choice(ACTIONS)
+            else:
+                with torch.no_grad():
+                    a = online(torch.as_tensor(state, dtype=torch.float32, device=device).unsqueeze(0)).argmax(dim=1).item()
+                action = int(a)
+
+            switched = False
+            if action == 1 and (step - last_switch_step) >= min_green:
+                tls_id = "KB_Junction"
+                prog = traci.trafficlight.getAllProgramLogics(tls_id)[0]
+                num_phases = len(prog.phases)
+                next_phase = (traci.trafficlight.getPhase(tls_id) + 1) % num_phases
+                traci.trafficlight.setPhase(tls_id, next_phase)
+                last_switch_step = step
+                switched = True
+
+            # advance simulation
+            traci.simulationStep()
+
+            next_state = get_state_vec(det_ids, phases, last_switch_step, step+1)
+            total_queue = sum([traci.lanearea.getLastStepVehicleNumber(d) for d in det_ids])
+            reward = -( total_queue + (args.switch_penalty if switched else 0.0) )
+            done = (traci.simulation.getMinExpectedNumber() == 0) or (step+1 >= args.max_steps)
+
+            buffer.push(state, action, reward, next_state, float(done))
+
+            # train if we have enough samples
+            if len(buffer) >= args.batch_size:
+                s, a, r, ns, d = buffer.sample(args.batch_size)
+                s = s.to(device); ns = ns.to(device)
+                a = a.to(device); r = r.to(device); d = d.to(device)
+
+                # Q(s,a)
+                q_sa = online(s).gather(1, a.view(-1,1)).squeeze(1)
+
+                # Double DQN target:
+                with torch.no_grad():
+                    next_actions = online(ns).argmax(dim=1, keepdim=True)
+                    q_ns_target = target(ns).gather(1, next_actions).squeeze(1)
+                    target_q = r + args.gamma * (1.0 - d) * q_ns_target
+
+                loss = nn.functional.smooth_l1_loss(q_sa, target_q)
+                optimizer.zero_grad(); loss.backward(); optimizer.step()
+
+                # target sync
+                if step_global % args.target_update == 0:
+                    target.load_state_dict(online.state_dict())
+
+            # ε-decay
+            if epsilon > args.end_epsilon:
+                epsilon -= eps_decay
+
+            # lightweight logging
+            if step_global % 50 == 0:
+                reward_hist.append(reward if len(reward_hist)==0 else reward_hist[-1] + reward)
+                queue_hist.append(total_queue)
+                step_hist.append(step_global)
+                print(f"step={step_global:5d}  eps={epsilon:.2f}  queue={total_queue}  rew={reward:.1f}")
+
+            step += 1
+            step_global += 1
+
+    traci.close()
+    # plots
+    plt.figure(figsize=(10,4))
+    plt.plot(step_hist, reward_hist, label="Cumulative Reward")
+    plt.grid(True); plt.legend(); plt.title("Double DQN Training"); plt.xlabel("Step"); plt.ylabel("Cum. Reward")
+    plt.savefig(f"{out_dir}/plots/{args.seed}.dqn_cum_reward.png")
+
+    plt.figure(figsize=(10,4))
+    plt.plot(step_hist, queue_hist, label="Total Queue Length")
+    plt.grid(True); plt.legend(); plt.title("Queue Length over Time"); plt.xlabel("Step"); plt.ylabel("Vehicles")
+    plt.savefig(f"{out_dir}/plots/{args.seed}.dqn_queue.png")
+
+    # save model
+    torch.save(online.state_dict(), f"{out_dir}/{args.seed}.double_dqn.pt")
+    print("\nTraining finished. Model saved.")
+
+if __name__ == "__main__":
+    main()
+
+
+'''# Step 1: Add modules to provide access to specific libraries and functions
 import os  # Module provides functions to handle file paths, directories, environment variables
 import sys  # Module provides access to Python-specific system parameters and functions
 import random
@@ -29,12 +252,14 @@ def run_traciDQL_simulation():  # <--- wrap entire logic here
     import traci  # Static network information (such as reading and analyzing network files)
 
     output_file = f"outputs/dynamic_DQL_vehicle_data/{args.seed}.dynamic_DQL_vehicle_data.xml"
+    output_tripinfo = f"outputs/dynamic_DQL_vehicle_data/{args.seed}.tripinfo_dynamic_DQL_vehicle_data.xml"
     # Step 4: Define Sumo configuration
     Sumo_config = [
         'sumo',
         '-c', 'simulation_katubedda_junction_dynamic.sumocfg',
         '--queue-output', output_file,
         '--queue-output.period', '300',
+        '--tripinfo-output', output_tripinfo,
         '--random', 'true',
         '--seed', '224178'
     ]
@@ -105,8 +330,8 @@ def run_traciDQL_simulation():  # <--- wrap entire logic here
         detector_MRT_to_KB_001_4 = "MRT_to_KB_001.37_4"
         detector_MRT_to_KB_001_5 = "MRT_to_KB_001.37_5"
         
-        detector_P_to_KBJ_1 = "P_to_KBJ_2"
-        detector_P_to_KBJ_2 = "P_to_KBJ_1"
+        detector_P_to_KBJ_1 = "P_to_KBJ_1"
+        detector_P_to_KBJ_2 = "P_to_KBJ_2"
 
         traffic_light_id = "KB_Junction"
         
@@ -253,4 +478,4 @@ def run_traciDQL_simulation():  # <--- wrap entire logic here
     plt.savefig(f"outputs/dynamic_DQL_vehicle_data/plots/{args.seed}.Queue Length over Steps.png")
 
 if __name__ == '__main__':
-    run_traciDQL_simulation()
+    run_traciDQL_simulation()'''

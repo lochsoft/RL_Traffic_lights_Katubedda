@@ -1,4 +1,160 @@
-# Step 1: Add modules to provide access to specific libraries and functions
+import os
+import sys
+import random
+import numpy as np
+import matplotlib.pyplot as plt
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--seed", type=int, default=224178, help="Random seed for reproducibility")
+args = parser.parse_args()
+
+# Set random seeds (for Python and NumPy)
+print(f"Using random seed: {args.seed}")
+random.seed(args.seed)
+np.random.seed(args.seed)
+
+def run_traciQL_simulation():
+    if 'SUMO_HOME' in os.environ:
+        tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
+        sys.path.append(tools)
+    else:
+        sys.exit("Please declare environment variable 'SUMO_HOME'")
+
+    import traci
+
+    output_dir = "outputs/dynamic_QL_vehicle_data"
+    os.makedirs(output_dir, exist_ok=True)
+
+    output_file = f"{output_dir}/{args.seed}.dynamic_QL_vehicle_data.xml"
+    output_tripinfo = f"{output_dir}/{args.seed}.tripinfo_dynamic_QL_vehicle_data.xml"
+
+    Sumo_config = [
+        'sumo',
+        '-c', 'simulation_katubedda_junction_dynamic.sumocfg',
+        '--queue-output', output_file,
+        '--queue-output.period', '300',
+        '--tripinfo-output', output_tripinfo,
+        '--seed', str(args.seed)   # Proper seeding, remove --random true
+    ]
+
+    traci.start(Sumo_config)
+
+    # --- Variables ---
+    TOTAL_STEPS = 5500
+    ALPHA = 0.1
+    GAMMA = 0.9
+
+    EPSILON_START = 0.3
+    EPSILON_END = 0.05
+    EPSILON_DECAY_STEPS = TOTAL_STEPS // 2  # decay over first half
+    epsilon = EPSILON_START
+
+    ACTIONS = [0, 1]  # 0 = keep, 1 = switch
+    MIN_GREEN_STEPS = 30   # reduced from 100
+
+    Q_table = {}
+    last_switch_step = -MIN_GREEN_STEPS
+
+    # --- Helper functions ---
+    def get_max_Q_value(s):
+        if s not in Q_table:
+            Q_table[s] = np.zeros(len(ACTIONS))
+        return np.max(Q_table[s])
+
+    def get_state():
+        # Collect queue lengths (lanearea detectors)
+        det_ids = [
+            "CMB_to_KBJ_001_1","CMB_to_KBJ_001_2","CMB_to_KBJ_001_3","CMB_to_KBJ_001_4",
+            "MRT_to_KB_001.37_2","MRT_to_KB_001.37_3","MRT_to_KB_001.37_4","MRT_to_KB_001.37_5",
+            "P_to_KBJ_1","P_to_KBJ_2"
+        ]
+        queues = tuple(traci.lanearea.getLastStepVehicleNumber(d) for d in det_ids)
+        current_phase = traci.trafficlight.getPhase("KB_Junction")
+        return queues + (current_phase,)
+
+    def get_reward(state, switched):
+        total_queue = sum(state[:-1])
+        switch_penalty = 2.0 if switched else 0.0   # discourage unnecessary switching
+        return -(total_queue + switch_penalty)
+
+    def select_action(state, epsilon):
+        if random.random() < epsilon:
+            return random.choice(ACTIONS)
+        if state not in Q_table:
+            Q_table[state] = np.zeros(len(ACTIONS))
+        return int(np.argmax(Q_table[state]))
+
+    def update_Q(old_state, action, reward, new_state):
+        if old_state not in Q_table:
+            Q_table[old_state] = np.zeros(len(ACTIONS))
+        old_q = Q_table[old_state][action]
+        Q_table[old_state][action] = old_q + ALPHA * (reward + GAMMA * get_max_Q_value(new_state) - old_q)
+
+    # --- Training loop ---
+    step_history, reward_history, queue_history = [], [], []
+    cumulative_reward = 0.0
+
+    print("\n=== Starting Q-Learning with improvements ===")
+    step = 0
+    while traci.simulation.getMinExpectedNumber() > 0:
+        state = get_state()
+        action = select_action(state, epsilon)
+
+        switched = False
+        if action == 1 and step - last_switch_step >= MIN_GREEN_STEPS:
+            tls_id = "KB_Junction"
+            program = traci.trafficlight.getAllProgramLogics(tls_id)[0]
+            num_phases = len(program.phases)
+            next_phase = (traci.trafficlight.getPhase(tls_id) + 1) % num_phases
+            traci.trafficlight.setPhase(tls_id, next_phase)
+            last_switch_step = step
+            switched = True
+
+        traci.simulationStep()
+
+        new_state = get_state()
+        reward = get_reward(new_state, switched)
+        cumulative_reward += reward
+
+        update_Q(state, action, reward, new_state)
+
+        # epsilon decay
+        if epsilon > EPSILON_END:
+            epsilon -= (EPSILON_START - EPSILON_END) / EPSILON_DECAY_STEPS
+
+        if step % 50 == 0:
+            print(f"Step {step}, Epsilon={epsilon:.2f}, Queue={sum(new_state[:-1])}")
+
+        step += 1
+
+    traci.close()
+    print(f"\nTraining finished. Final Q-table size: {len(Q_table)}")
+
+    # --- Plots ---
+    plt.figure(figsize=(10, 5))
+    plt.plot(step_history, reward_history, label="Cumulative Reward")
+    plt.xlabel("Step")
+    plt.ylabel("Cumulative Reward")
+    plt.title("Q-Learning Training Progress")
+    plt.grid(True)
+    plt.legend()
+    plt.savefig(f"{output_dir}/plots/{args.seed}_cumulative_reward.png")
+
+    plt.figure(figsize=(10, 5))
+    plt.plot(step_history, queue_history, label="Queue Length")
+    plt.xlabel("Step")
+    plt.ylabel("Total Queue Length")
+    plt.title("Queue Length over Time")
+    plt.grid(True)
+    plt.legend()
+    plt.savefig(f"{output_dir}/plots/{args.seed}_queue_length.png")
+
+if __name__ == "__main__":
+    run_traciQL_simulation()
+
+
+'''# Step 1: Add modules to provide access to specific libraries and functions
 import os
 import sys
 import random
@@ -9,6 +165,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--seed", type=int, default=None, help="Random seed for reproducibility")
 args = parser.parse_args()
+seed = args.seed if args.seed is not None else 224178
 
 # Set random seeds (for Python and NumPy)
 if args.seed is not None:
@@ -29,14 +186,15 @@ def run_traciQL_simulation():
     import traci
 
     output_file = f"outputs/dynamic_QL_vehicle_data/{args.seed}.dynamic_QL_vehicle_data.xml"
+    output_tripinfo = f"outputs/dynamic_QL_vehicle_data/{args.seed}.tripinfo_dynamic_QL_vehicle_data.xml"
     # Step 4: Define Sumo configuration
     Sumo_config = [
         'sumo',
         '-c', 'simulation_katubedda_junction_dynamic.sumocfg',
         '--queue-output', output_file,
         '--queue-output.period', '300',
-        '--random', 'true',
-        '--seed', '224178'
+        '--tripinfo-output', output_tripinfo,
+        '--seed', str(seed)
     ]
 
     # Step 5: Open connection between SUMO and Traci
@@ -56,7 +214,7 @@ def run_traciQL_simulation():
     ACTIONS = [0, 1]
     global Q_table
     Q_table = {}
-    MIN_GREEN_STEPS = 100
+    MIN_GREEN_STEPS = 15
     global last_switch_step
     last_switch_step = -MIN_GREEN_STEPS
 
@@ -83,8 +241,8 @@ def run_traciQL_simulation():
         detector_MRT_to_KB_001_4 = "MRT_to_KB_001.37_4"
         detector_MRT_to_KB_001_5 = "MRT_to_KB_001.37_5"
         
-        detector_P_to_KBJ_1 = "P_to_KBJ_2"
-        detector_P_to_KBJ_2 = "P_to_KBJ_1"
+        detector_P_to_KBJ_1 = "P_to_KBJ_1"
+        detector_P_to_KBJ_2 = "P_to_KBJ_2"
 
         traffic_light_id = "KB_Junction"
         
@@ -199,7 +357,7 @@ def run_traciQL_simulation():
 
 # Allow script to be run directly
 if __name__ == "__main__":
-    run_traciQL_simulation()
+    run_traciQL_simulation()'''
 
 
 '''# Step 1: Add modules to provide access to specific libraries and functions

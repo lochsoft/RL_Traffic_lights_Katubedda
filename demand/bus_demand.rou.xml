@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-27 01:32:09.677082 by ptlines2flows.py v1_23_1+0000-676720d13f6
+<!-- generated on 2025-08-05 09:18:18.217882 by ptlines2flows.py v1_24_0+0000-b72eb3fabc8
 <configuration>
     <net-file value="network/katubedda_junction_network.net.xml"/>
     <ptlines-file value="additionals/bus/bus_lines.xml"/>
@@ -24,9 +24,9 @@
     <vType id="ferry" vClass="ship"/>
     <route id="bus_100/101/400/412/418/428/430/433:0" color="1,0,0" edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002" >
         <stop busStop="Kzone_bus_stop" duration="20.0" until="38.0"/> <!-- None -->
-        <stop busStop="KJ_bus_stop" duration="20.0" until="82.0"/> <!-- None -->
-        <stop busStop="bs_2" duration="20.0" until="126.0"/> <!-- None -->
-        <stop busStop="bs_0" duration="20.0" until="176.0"/> <!-- None -->
+        <stop busStop="KJ_bus_stop" duration="20.0" until="81.0"/> <!-- None -->
+        <stop busStop="bs_2" duration="20.0" until="127.0"/> <!-- None -->
+        <stop busStop="bs_0" duration="20.0" until="177.0"/> <!-- None -->
     </route>
     <route id="bus_100/101/400/412/418/428/430/433:1" color="0,0,1" edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002" >
         <stop busStop="bs_1" duration="20.0" until="46.0"/> <!-- None -->
@@ -34,7 +34,7 @@
     </route>
     <route id="bus_255:0" color="0,1,0" edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P" >
         <stop busStop="bs_1" duration="20.0" until="78.0"/> <!-- None -->
-        <stop busStop="KJ_bus_stop_2" duration="20.0" until="275.0"/> <!-- None -->
+        <stop busStop="KJ_bus_stop_2" duration="20.0" until="274.0"/> <!-- None -->
     </route>
     <flow id="bus_100/101/400/412/418/428/430/433:0" type="bus" route="bus_100/101/400/412/418/428/430/433:0" begin="0.0" end="4500.0" period="120" line="100/101/400/412/418/428/430/433:0" >
         <param key="name" value="Moratuwa-&gt;Fort"/>

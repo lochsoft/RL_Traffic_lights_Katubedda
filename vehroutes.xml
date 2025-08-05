@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-27 01:32:09 by Eclipse SUMO sumo Version 1.23.1
+<!-- generated on 2025-08-05 09:18:18 by Eclipse SUMO sumo Version 1.24.0
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -37,13 +37,13 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vehicle id="1_bus_100/101/400/412/418/428/430/433:1" type="bus" depart="0.00" departLane="1" arrival="116.00">
+    <vehicle id="1_bus_100/101/400/412/418/428/430/433:1" type="bus" depart="0.00" departLane="1" arrival="117.00">
         <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
         <stop busStop="bs_1" duration="30.00"/>
         <stop busStop="KJ_bus_stop_3" duration="30.00"/>
     </vehicle>
 
-    <vehicle id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" depart="0.00" departLane="1" arrival="182.00">
+    <vehicle id="0_bus_100/101/400/412/418/428/430/433:0" type="bus" depart="0.00" departLane="1" arrival="183.00">
         <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
         <stop busStop="Kzone_bus_stop" duration="30.00"/>
         <stop busStop="KJ_bus_stop" duration="30.00"/>
@@ -51,7 +51,7 @@
         <stop busStop="bs_0" duration="30.00"/>
     </vehicle>
 
-    <vehicle id="2_bus_255:0" type="bus" depart="6.00" departLane="1" arrival="296.00">
+    <vehicle id="2_bus_255:0" type="bus" depart="6.00" departLane="1" arrival="294.00">
         <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
         <stop busStop="bs_1" duration="30.00"/>
         <stop busStop="KJ_bus_stop_2" duration="30.00"/>

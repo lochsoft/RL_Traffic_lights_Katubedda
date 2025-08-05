@@ -1,1267 +1,1267 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-07-27 01:32:08.776282 by routeSampler.py v1_23_1+0000-676720d13f6
+<!-- generated on 2025-08-05 09:18:16.531297 by routeSampler.py v1_24_0+0000-b72eb3fabc8
 <configuration>
     <route-files value="intermediate_outputs/whitelist_warmup.rou.xml"/>
     <turn-files value="data/edge_relation_data_warmup.dat.xml"/>
     <output-file value="demand/calibrated_demand_warmup.rou.xml"/>
-    <attributes value="type='v_type_dist_base' departLane='free' departSpeed='0'"/>
+    <attributes value="type='v_type_dist_base' departLane='best' departSpeed='0'"/>
 </configuration>
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
 <!-- begin="0.0" end="300.0" -->
-    <vehicle id="0_0" depart="1.52" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    <vehicle id="0_0" depart="4.32" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="0_1" depart="2.76" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="0_2" depart="4.32" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_3" depart="4.64" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_1" depart="4.64" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="0_4" depart="7.29" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_5" depart="7.61" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_6" depart="9.15" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_7" depart="10.78" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="0_8" depart="11.20" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_9" depart="15.50" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_10" depart="23.54" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_11" depart="25.24" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_12" depart="25.60" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_13" depart="28.10" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_14" depart="28.19" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_15" depart="29.15" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_16" depart="30.44" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
-    </vehicle>
-    <vehicle id="0_17" depart="38.12" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="0_18" depart="42.03" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="0_19" depart="46.93" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_20" depart="48.24" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_21" depart="48.49" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_22" depart="50.85" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="0_23" depart="51.99" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
-    </vehicle>
-    <vehicle id="0_24" depart="53.13" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_25" depart="58.57" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_26" depart="64.75" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="0_27" depart="67.28" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="0_28" depart="71.17" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_29" depart="73.20" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_30" depart="74.32" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_31" depart="75.07" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_32" depart="79.56" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_33" depart="81.25" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_34" depart="83.98" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_35" depart="84.23" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="0_36" depart="85.96" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_37" depart="88.08" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_38" depart="88.33" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_39" depart="95.08" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_40" depart="96.89" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_41" depart="97.62" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_42" depart="101.40" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_43" depart="101.71" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_44" depart="104.76" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_45" depart="106.79" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_46" depart="107.85" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_47" depart="108.06" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_48" depart="110.31" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_49" depart="111.05" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
-    </vehicle>
-    <vehicle id="0_50" depart="112.67" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_51" depart="115.53" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_52" depart="117.93" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_53" depart="122.69" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_54" depart="125.88" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_55" depart="128.46" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_56" depart="131.69" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_57" depart="139.68" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_58" depart="147.76" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_59" depart="150.45" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_60" depart="150.79" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_61" depart="153.40" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_62" depart="154.89" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_63" depart="155.50" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_64" depart="156.67" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_65" depart="159.41" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_66" depart="162.19" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_67" depart="162.79" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_68" depart="164.62" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_69" depart="164.77" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_70" depart="166.31" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_71" depart="167.04" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_72" depart="170.49" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
-    </vehicle>
-    <vehicle id="0_73" depart="171.02" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_74" depart="173.07" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_75" depart="173.48" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_76" depart="177.25" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_77" depart="181.93" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_78" depart="183.52" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_79" depart="184.50" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_80" depart="186.87" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_81" depart="189.34" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_82" depart="191.23" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_83" depart="192.61" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_84" depart="193.64" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_85" depart="194.89" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
-    </vehicle>
-    <vehicle id="0_86" depart="194.99" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_87" depart="195.59" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_88" depart="197.28" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_89" depart="198.06" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_90" depart="199.05" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_91" depart="207.57" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_92" depart="208.79" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_93" depart="208.81" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_94" depart="209.10" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_95" depart="210.59" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_96" depart="210.75" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_97" depart="213.65" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_98" depart="214.38" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_99" depart="216.74" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_100" depart="217.79" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_101" depart="217.83" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_2" depart="7.29" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
     </vehicle>
-    <vehicle id="0_102" depart="221.37" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_3" depart="7.61" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
+    </vehicle>
+    <vehicle id="0_4" depart="7.95" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="0_103" depart="222.23" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_5" depart="9.15" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_6" depart="10.78" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_7" depart="11.20" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="0_8" depart="12.22" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_9" depart="13.59" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="0_10" depart="13.80" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_11" depart="15.50" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_12" depart="21.17" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="0_104" depart="223.95" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
+    <vehicle id="0_13" depart="23.54" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
     </vehicle>
-    <vehicle id="0_105" depart="227.35" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_14" depart="25.60" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_15" depart="28.19" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_16" depart="29.15" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="0_106" depart="231.00" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_17" depart="29.35" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_18" depart="34.82" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="0_107" depart="233.96" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_19" depart="38.12" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_20" depart="42.03" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_21" depart="46.93" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_22" depart="48.88" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_23" depart="50.85" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="0_24" depart="51.96" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="0_25" depart="51.99" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_26" depart="53.13" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_27" depart="58.57" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_28" depart="64.75" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_29" depart="74.32" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_30" depart="75.07" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="0_31" depart="81.25" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="0_32" depart="83.98" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_33" depart="84.23" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_34" depart="85.96" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_35" depart="88.08" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_36" depart="88.33" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
     </vehicle>
-    <vehicle id="0_108" depart="238.44" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    <vehicle id="0_37" depart="95.08" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="0_109" depart="238.56" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_38" depart="96.89" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
     </vehicle>
-    <vehicle id="0_110" depart="238.74" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    <vehicle id="0_39" depart="101.40" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
     </vehicle>
-    <vehicle id="0_111" depart="239.49" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="0_112" depart="242.81" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_40" depart="106.79" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="0_113" depart="243.03" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_41" depart="107.85" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_42" depart="108.06" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_43" depart="111.05" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_44" depart="112.38" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_45" depart="112.67" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
     </vehicle>
-    <vehicle id="0_114" depart="246.78" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_46" depart="115.53" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_47" depart="115.83" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_48" depart="116.45" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="0_115" depart="250.79" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_49" depart="119.55" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_50" depart="122.69" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="0_51" depart="125.88" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_52" depart="128.46" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_53" depart="130.16" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="0_54" depart="131.69" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_55" depart="137.48" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_56" depart="139.68" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_57" depart="142.04" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_58" depart="142.25" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_59" depart="147.48" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_60" depart="147.76" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_61" depart="150.45" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_62" depart="150.79" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_63" depart="150.94" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_64" depart="153.40" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_65" depart="154.89" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="0_66" depart="155.50" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_67" depart="156.67" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_68" depart="159.41" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_69" depart="162.19" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_70" depart="162.79" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_71" depart="163.69" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_72" depart="164.77" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_73" depart="166.31" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_74" depart="167.04" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_75" depart="171.02" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_76" depart="172.64" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_77" depart="173.07" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_78" depart="173.48" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_79" depart="175.73" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_80" depart="177.25" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_81" depart="183.52" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_82" depart="184.50" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_83" depart="184.76" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_84" depart="186.87" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_85" depart="187.76" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_86" depart="189.34" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_87" depart="190.53" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_88" depart="191.23" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_89" depart="192.73" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_90" depart="192.99" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
     </vehicle>
-    <vehicle id="0_116" depart="254.77" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_117" depart="255.34" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_118" depart="255.90" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_119" depart="260.12" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_120" depart="263.21" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_121" depart="266.13" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="0_122" depart="267.00" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_123" depart="267.61" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_124" depart="269.13" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_125" depart="269.57" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="0_126" depart="273.97" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_127" depart="274.46" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_128" depart="278.50" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_129" depart="280.85" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_130" depart="282.14" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_131" depart="286.18" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_132" depart="286.46" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_133" depart="288.79" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_134" depart="289.09" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
-    </vehicle>
-    <vehicle id="0_135" depart="290.00" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_136" depart="291.90" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="0_137" depart="292.76" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="0_138" depart="297.02" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="0_91" depart="193.64" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="0_92" depart="194.99" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_93" depart="197.61" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_94" depart="198.06" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_95" depart="208.79" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_96" depart="208.81" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_97" depart="209.10" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="0_98" depart="210.59" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_99" depart="210.75" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_100" depart="211.10" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_101" depart="214.38" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_102" depart="216.74" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_103" depart="217.83" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_104" depart="221.37" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_105" depart="222.23" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_106" depart="227.35" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_107" depart="231.00" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_108" depart="238.44" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001"/>
+    </vehicle>
+    <vehicle id="0_109" depart="238.56" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="0_110" depart="238.74" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_111" depart="239.49" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_112" depart="242.81" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_113" depart="243.03" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_114" depart="246.78" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_115" depart="250.79" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_116" depart="255.34" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_117" depart="255.90" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_118" depart="256.64" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_119" depart="256.95" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_120" depart="260.12" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001"/>
+    </vehicle>
+    <vehicle id="0_121" depart="263.21" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_122" depart="267.00" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_123" depart="271.61" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_124" depart="273.97" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_125" depart="274.46" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_126" depart="278.50" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_127" depart="280.85" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_128" depart="282.07" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_129" depart="282.14" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="0_130" depart="282.44" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_131" depart="286.18" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="0_132" depart="286.46" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_133" depart="288.36" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_134" depart="288.79" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_135" depart="289.09" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_136" depart="290.00" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="0_137" depart="292.76" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="0_138" depart="297.02" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001 30093400"/>
     </vehicle>
 <!-- begin="300.0" end="600.0" -->
-    <vehicle id="300_0" depart="300.78" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_1" depart="302.26" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_2" depart="306.66" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_3" depart="309.14" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_4" depart="309.54" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="300_5" depart="313.76" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_0" depart="306.02" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
     </vehicle>
-    <vehicle id="300_6" depart="314.07" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    <vehicle id="300_1" depart="311.00" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="300_7" depart="318.70" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    <vehicle id="300_2" depart="311.79" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="300_8" depart="319.87" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_3" depart="312.26" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_4" depart="315.55" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
     </vehicle>
-    <vehicle id="300_9" depart="325.36" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_10" depart="326.52" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_11" depart="326.76" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_12" depart="327.30" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_13" depart="327.69" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_5" depart="318.32" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
     </vehicle>
-    <vehicle id="300_14" depart="331.46" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_15" depart="338.62" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_16" depart="339.94" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_17" depart="344.32" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_18" depart="347.09" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_19" depart="354.02" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_20" depart="354.69" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_21" depart="361.51" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_22" depart="362.17" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_23" depart="362.74" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="300_24" depart="367.15" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_25" depart="367.60" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_26" depart="369.96" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="300_27" depart="370.83" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_28" depart="372.33" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_29" depart="373.31" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_30" depart="375.43" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_31" depart="380.60" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_32" depart="382.42" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_33" depart="389.39" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_34" depart="392.33" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_35" depart="396.47" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_36" depart="399.03" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_37" depart="399.10" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_38" depart="401.23" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="300_39" depart="402.47" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_40" depart="402.88" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_41" depart="403.52" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_42" depart="404.22" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_43" depart="404.29" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_44" depart="406.24" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_45" depart="406.53" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_46" depart="406.80" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_47" depart="409.61" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_48" depart="413.19" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_49" depart="413.36" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_50" depart="413.63" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_51" depart="419.15" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_52" depart="420.09" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_53" depart="423.50" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_54" depart="426.16" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_55" depart="435.27" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_56" depart="437.80" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_57" depart="438.04" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_58" depart="442.19" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_59" depart="442.86" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
-    </vehicle>
-    <vehicle id="300_60" depart="443.87" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_61" depart="444.01" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_62" depart="444.34" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_63" depart="446.34" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
-    </vehicle>
-    <vehicle id="300_64" depart="449.45" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_65" depart="449.47" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_66" depart="453.50" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_67" depart="454.57" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_68" depart="457.08" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
-    </vehicle>
-    <vehicle id="300_69" depart="459.38" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
-    </vehicle>
-    <vehicle id="300_70" depart="460.30" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_71" depart="460.33" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_72" depart="460.60" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_6" depart="319.01" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
     </vehicle>
-    <vehicle id="300_73" depart="460.98" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_74" depart="461.18" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_7" depart="319.95" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="300_75" depart="464.23" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_76" depart="464.61" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_77" depart="466.44" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="300_78" depart="467.32" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_79" depart="469.19" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_80" depart="469.34" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_81" depart="473.89" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_82" depart="475.26" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_83" depart="475.43" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_84" depart="475.54" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_85" depart="475.96" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_86" depart="476.99" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="300_87" depart="479.18" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_88" depart="480.58" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_89" depart="482.27" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_90" depart="482.43" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_91" depart="485.18" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_92" depart="486.24" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_93" depart="490.99" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_94" depart="491.81" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_95" depart="494.65" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_8" depart="324.07" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
     </vehicle>
-    <vehicle id="300_96" depart="506.15" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="300_97" depart="506.34" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_98" depart="507.51" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_99" depart="508.95" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_100" depart="509.29" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_101" depart="509.30" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_9" depart="324.53" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="300_102" depart="516.15" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_10" depart="326.08" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="300_103" depart="517.84" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    <vehicle id="300_11" depart="326.61" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
     </vehicle>
-    <vehicle id="300_104" depart="517.92" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_12" depart="330.53" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="300_13" depart="332.15" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_14" depart="333.61" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_15" depart="334.45" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
     </vehicle>
-    <vehicle id="300_105" depart="521.05" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    <vehicle id="300_16" depart="335.93" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001"/>
     </vehicle>
-    <vehicle id="300_106" depart="521.22" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    <vehicle id="300_17" depart="336.19" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001"/>
     </vehicle>
-    <vehicle id="300_107" depart="524.88" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_108" depart="524.97" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_109" depart="527.10" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_110" depart="527.12" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="300_111" depart="527.99" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_112" depart="530.68" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_113" depart="535.40" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_114" depart="537.55" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_115" depart="538.94" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_116" depart="541.51" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="300_117" depart="544.92" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_118" depart="546.54" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_119" depart="549.41" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_120" depart="552.21" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
-    </vehicle>
-    <vehicle id="300_121" depart="552.63" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_122" depart="553.33" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_123" depart="555.25" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_124" depart="560.16" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
-    </vehicle>
-    <vehicle id="300_125" depart="560.49" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_126" depart="562.30" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_127" depart="563.47" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_128" depart="568.27" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_129" depart="569.89" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_130" depart="570.95" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_131" depart="573.14" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
-    </vehicle>
-    <vehicle id="300_132" depart="573.95" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="300_133" depart="577.21" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="300_134" depart="580.11" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="300_135" depart="590.39" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="300_136" depart="591.93" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_18" depart="337.29" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
     </vehicle>
-    <vehicle id="300_137" depart="594.14" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_19" depart="338.27" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_20" depart="340.32" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_21" depart="341.93" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_22" depart="345.86" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_23" depart="346.31" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_24" depart="348.20" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_25" depart="349.10" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_26" depart="349.28" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_27" depart="350.68" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_28" depart="351.27" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="300_29" depart="351.70" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_30" depart="352.01" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_31" depart="353.10" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
     </vehicle>
-    <vehicle id="300_138" depart="595.88" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="300_32" depart="354.37" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_33" depart="355.36" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_34" depart="355.97" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_35" depart="356.11" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_36" depart="357.69" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_37" depart="360.49" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_38" depart="361.90" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_39" depart="362.80" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_40" depart="363.43" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="300_41" depart="371.17" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_42" depart="372.72" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_43" depart="372.74" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_44" depart="373.79" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_45" depart="375.73" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_46" depart="376.39" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_47" depart="377.37" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_48" depart="380.77" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_49" depart="383.06" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_50" depart="383.58" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_51" depart="383.99" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="300_52" depart="385.13" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_53" depart="385.53" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_54" depart="386.59" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_55" depart="396.62" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
+    </vehicle>
+    <vehicle id="300_56" depart="396.71" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_57" depart="397.10" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001"/>
+    </vehicle>
+    <vehicle id="300_58" depart="398.25" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_59" depart="400.98" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_60" depart="404.66" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_61" depart="406.83" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_62" depart="407.65" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_63" depart="408.92" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_64" depart="409.28" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_65" depart="410.67" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_66" depart="411.14" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_67" depart="413.19" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="300_68" depart="419.36" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_69" depart="423.12" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_70" depart="423.55" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_71" depart="427.63" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_72" depart="429.50" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_73" depart="434.22" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_74" depart="438.23" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_75" depart="438.76" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_76" depart="441.47" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_77" depart="444.34" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_78" depart="445.36" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_79" depart="449.53" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="300_80" depart="451.03" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_81" depart="452.28" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_82" depart="453.50" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_83" depart="456.92" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_84" depart="457.35" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_85" depart="459.63" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_86" depart="459.78" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_87" depart="459.79" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="300_88" depart="461.13" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_89" depart="467.03" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_90" depart="471.23" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_91" depart="471.48" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_92" depart="472.34" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_93" depart="474.37" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_94" depart="476.05" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_95" depart="478.08" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="300_96" depart="478.69" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_97" depart="481.73" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_98" depart="483.19" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_99" depart="485.48" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_100" depart="488.37" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_101" depart="493.78" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_102" depart="499.56" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_103" depart="500.27" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_104" depart="500.59" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001"/>
+    </vehicle>
+    <vehicle id="300_105" depart="503.73" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_106" depart="504.45" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_107" depart="507.12" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_108" depart="514.00" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_109" depart="519.26" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_110" depart="522.34" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_111" depart="523.63" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_112" depart="524.24" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_113" depart="524.48" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_114" depart="528.07" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_115" depart="530.85" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_116" depart="536.75" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_117" depart="538.58" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_118" depart="539.82" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="300_119" depart="541.86" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_120" depart="542.96" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_121" depart="544.37" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_122" depart="545.12" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="300_123" depart="549.19" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_124" depart="552.55" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_125" depart="559.65" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_126" depart="562.07" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="300_127" depart="567.16" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_128" depart="568.56" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="300_129" depart="569.03" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_130" depart="576.26" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_131" depart="578.81" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_132" depart="578.86" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="300_133" depart="581.50" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_134" depart="589.51" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_135" depart="590.84" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="300_136" depart="594.71" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_137" depart="595.95" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="300_138" depart="596.99" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
     </vehicle>
 <!-- begin="600.0" end="900.0" -->
-    <vehicle id="600_0" depart="603.30" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
+    <vehicle id="600_0" depart="605.36" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
     </vehicle>
-    <vehicle id="600_1" depart="603.90" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="600_2" depart="605.52" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_3" depart="605.91" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_4" depart="606.74" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_5" depart="607.62" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
-    </vehicle>
-    <vehicle id="600_6" depart="607.96" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_7" depart="608.13" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_8" depart="609.35" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_9" depart="614.09" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_10" depart="615.43" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_11" depart="622.54" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_12" depart="624.84" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_13" depart="625.65" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_14" depart="627.47" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_15" depart="629.83" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_1" depart="606.38" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
     </vehicle>
-    <vehicle id="600_16" depart="631.23" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_17" depart="631.98" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_18" depart="635.33" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_19" depart="641.05" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
-    </vehicle>
-    <vehicle id="600_20" depart="641.07" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_21" depart="641.81" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_22" depart="642.03" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_23" depart="646.85" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_24" depart="649.89" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_25" depart="651.50" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_2" depart="607.32" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="600_26" depart="652.61" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_27" depart="653.56" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_28" depart="654.43" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_29" depart="655.54" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_30" depart="661.50" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_31" depart="661.93" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_32" depart="662.37" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_33" depart="664.48" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_34" depart="666.59" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_35" depart="669.32" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_36" depart="671.45" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_37" depart="672.95" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_38" depart="673.60" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_39" depart="673.92" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_40" depart="677.37" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_41" depart="677.83" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_42" depart="678.68" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_43" depart="680.42" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_44" depart="680.60" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_45" depart="681.22" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="600_46" depart="681.64" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_47" depart="681.69" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_48" depart="682.22" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_49" depart="686.61" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_50" depart="687.94" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_51" depart="688.34" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
-    </vehicle>
-    <vehicle id="600_52" depart="689.14" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_53" depart="700.27" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_54" depart="702.55" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_55" depart="706.70" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_3" depart="609.35" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
     </vehicle>
-    <vehicle id="600_56" depart="708.29" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_57" depart="711.99" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_58" depart="713.91" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="600_59" depart="714.94" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_60" depart="716.79" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_4" depart="610.18" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="600_61" depart="719.16" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_62" depart="722.62" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_63" depart="722.82" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_64" depart="725.63" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_65" depart="726.43" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_66" depart="727.56" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_67" depart="730.45" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_68" depart="730.84" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_5" depart="611.10" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="600_69" depart="733.80" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_70" depart="742.82" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_71" depart="746.23" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="600_72" depart="748.65" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_73" depart="748.91" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_74" depart="755.68" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_75" depart="757.71" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_76" depart="762.49" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_77" depart="762.57" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_78" depart="765.61" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_79" depart="766.25" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_80" depart="769.92" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_81" depart="772.95" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_82" depart="774.91" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_83" depart="777.07" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_84" depart="777.09" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_85" depart="778.52" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="600_86" depart="779.05" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_87" depart="779.22" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_88" depart="780.16" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_89" depart="780.95" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_90" depart="787.24" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_91" depart="790.04" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_92" depart="793.20" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_93" depart="795.43" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_94" depart="795.82" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_95" depart="797.64" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_96" depart="797.68" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="600_97" depart="799.10" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_98" depart="799.51" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_99" depart="800.43" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_100" depart="801.57" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_101" depart="806.52" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_102" depart="807.68" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_103" depart="808.41" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_104" depart="814.79" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_105" depart="815.71" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_106" depart="816.68" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_107" depart="818.46" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_108" depart="819.67" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_109" depart="819.77" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="600_110" depart="821.41" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="600_111" depart="829.08" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_112" depart="831.27" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="600_113" depart="839.82" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_114" depart="839.96" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_6" depart="611.83" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
     </vehicle>
-    <vehicle id="600_115" depart="839.97" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_116" depart="841.97" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_117" depart="845.23" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_7" depart="612.63" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="600_118" depart="845.73" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_119" depart="848.92" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
-    </vehicle>
-    <vehicle id="600_120" depart="849.07" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_121" depart="850.48" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_122" depart="854.76" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_123" depart="856.71" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
-    </vehicle>
-    <vehicle id="600_124" depart="860.54" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_125" depart="861.88" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_126" depart="862.17" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_127" depart="867.80" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_128" depart="868.37" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_129" depart="868.90" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_130" depart="870.01" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
-    </vehicle>
-    <vehicle id="600_131" depart="874.29" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
-    </vehicle>
-    <vehicle id="600_132" depart="874.32" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_8" depart="615.43" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="600_133" depart="875.19" type='v_type_dist_base' departLane='free' departSpeed='0'>
-        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    <vehicle id="600_9" depart="617.35" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
     </vehicle>
-    <vehicle id="600_134" depart="881.05" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_10" depart="619.61" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
     </vehicle>
-    <vehicle id="600_135" depart="883.83" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_11" depart="622.54" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_12" depart="623.09" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_13" depart="626.82" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_14" depart="627.47" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001"/>
+    </vehicle>
+    <vehicle id="600_15" depart="631.98" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_16" depart="633.14" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_17" depart="636.17" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_18" depart="641.05" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
     </vehicle>
-    <vehicle id="600_136" depart="884.54" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_19" depart="646.17" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_20" depart="650.11" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_21" depart="652.17" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_22" depart="652.96" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_23" depart="654.17" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_24" depart="655.54" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_25" depart="655.93" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_26" depart="665.48" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_27" depart="666.15" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_28" depart="666.36" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_29" depart="667.15" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_30" depart="667.33" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_31" depart="669.00" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_32" depart="669.20" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_33" depart="669.50" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_34" depart="669.89" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
     </vehicle>
-    <vehicle id="600_137" depart="885.07" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_35" depart="670.08" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_36" depart="671.63" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
     </vehicle>
-    <vehicle id="600_138" depart="895.32" type='v_type_dist_base' departLane='free' departSpeed='0'>
+    <vehicle id="600_37" depart="673.92" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_38" depart="674.90" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_39" depart="678.68" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_40" depart="681.64" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_41" depart="686.17" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_42" depart="688.89" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="600_43" depart="689.20" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_44" depart="694.59" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_45" depart="695.63" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_46" depart="695.73" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_47" depart="700.27" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_48" depart="701.96" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_49" depart="705.04" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_50" depart="705.21" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="600_51" depart="706.39" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_52" depart="708.29" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_53" depart="715.30" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_54" depart="718.87" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_55" depart="720.58" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_56" depart="725.27" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_57" depart="725.33" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="600_58" depart="726.41" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_59" depart="728.33" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_60" depart="730.45" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_61" depart="733.80" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_62" depart="740.22" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_63" depart="742.26" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_64" depart="743.96" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_65" depart="746.83" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_66" depart="748.65" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_67" depart="748.91" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="600_68" depart="753.81" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_69" depart="758.68" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_70" depart="761.85" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_71" depart="762.57" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_72" depart="770.38" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_73" depart="777.07" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_74" depart="778.52" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_75" depart="778.88" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_76" depart="779.05" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_77" depart="782.32" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_78" depart="784.02" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_79" depart="784.76" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_80" depart="787.77" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="600_81" depart="788.25" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_82" depart="794.89" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_83" depart="797.64" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="600_84" depart="803.89" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_85" depart="806.52" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="600_86" depart="807.68" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_87" depart="808.41" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_88" depart="808.81" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_89" depart="808.89" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="600_90" depart="809.23" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_91" depart="811.67" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_92" depart="817.43" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_93" depart="818.46" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_94" depart="819.67" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="600_95" depart="821.27" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_96" depart="827.47" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_97" depart="830.16" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_98" depart="830.48" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_99" depart="831.27" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_100" depart="833.88" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 KB_to_MRT_002"/>
+    </vehicle>
+    <vehicle id="600_101" depart="835.90" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_102" depart="837.22" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_103" depart="839.63" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_104" depart="839.82" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_105" depart="841.97" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_106" depart="844.75" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_107" depart="845.73" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_108" depart="848.67" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_109" depart="853.36" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_110" depart="854.76" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_111" depart="858.61" type='v_type_dist_base' departLane='best' departSpeed='0'>
         <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001"/>
+    </vehicle>
+    <vehicle id="600_112" depart="861.03" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_113" depart="861.88" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_114" depart="862.10" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_115" depart="862.41" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_116" depart="863.74" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_003 CMB_to_KBJ_002 CMB_to_KBJ_001 KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="600_117" depart="865.14" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_118" depart="865.79" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_119" depart="874.65" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_120" depart="875.19" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_121" depart="877.32" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_122" depart="877.57" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_123" depart="878.33" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_124" depart="881.72" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_125" depart="882.82" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001 30093400"/>
+    </vehicle>
+    <vehicle id="600_126" depart="883.22" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_127" depart="883.28" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_128" depart="883.42" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_129" depart="884.99" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_130" depart="885.07" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_131" depart="890.73" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_132" depart="891.32" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001 KBJ_to_CMB_002"/>
+    </vehicle>
+    <vehicle id="600_133" depart="895.23" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_134" depart="896.30" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_135" depart="896.32" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_136" depart="897.35" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="CMB_to_KBJ_002 CMB_to_KBJ_001 KBJ_to_P"/>
+    </vehicle>
+    <vehicle id="600_137" depart="898.47" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="MRT_to_KB_003 MRT_to_KB_001 MRT_to_KB_001.37 KBJ_to_CMB_001"/>
+    </vehicle>
+    <vehicle id="600_138" depart="899.38" type='v_type_dist_base' departLane='best' departSpeed='0'>
+        <route edges="P_to_KBJ KB_to_MRT_001"/>
     </vehicle>
 </routes>

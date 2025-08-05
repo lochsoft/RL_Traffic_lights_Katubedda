@@ -10,10 +10,10 @@ os.chdir("c:\\Users\\Lochana Minuwansala\\Downloads\\Simulation  model\\Katubedd
 # 1. Random Trips Generation
 route_whitelist_6am_7am = ("randomTrips.py --net-file network/katubedda_junction_network.net.xml "
                    "--route-file intermediate_outputs/whitelist_6am_7am.rou.xml "
-                   "--fringe-factor 300 "
-                   "--max-distance 5000 "
-                   "--min-distance 200 "
-                   "--speed-exponent 4.0 "
+                   "--fringe-factor 50 "
+                   "--max-distance 600 "
+                   "--min-distance 100 "
+                   "--speed-exponent 2.0 "
                    "--period 0.1 "
                    "--validate")
 
@@ -21,10 +21,10 @@ subprocess.run(route_whitelist_6am_7am, shell=True)
 
 route_whitelist_warmup = ("randomTrips.py --net-file network/katubedda_junction_network.net.xml "
                    "--route-file intermediate_outputs/whitelist_warmup.rou.xml "
-                   "--fringe-factor 300 "
-                   "--max-distance 5000 "
-                   "--min-distance 200 "
-                   "--speed-exponent 4.0 "
+                   "--fringe-factor 50 "
+                   "--max-distance 600 "
+                   "--min-distance 100 "
+                   "--speed-exponent 2.0 "
                    "--period 0.1 "
                    "--validate")
 
@@ -35,7 +35,7 @@ route_sampler_6am_7am = ("routeSampler.py "
                  "--route-files intermediate_outputs/whitelist_6am_7am.rou.xml "
                  "--turn-files data/edge_relation_data_6am_7am.dat.xml "
                  "--output-file demand/calibrated_demand_6am_7am.rou.xml "
-                 "--attributes=\"type=\"'v_type_dist_base'\" departLane=\"'free'\" \"departSpeed=\"'0'\" ")
+                 "--attributes=\"type='v_type_dist_base' departLane='best' departSpeed='0'\" ")
 
 subprocess.run(route_sampler_6am_7am, shell=True)
 
@@ -43,7 +43,7 @@ route_sampler_warmup = ("routeSampler.py "
                  "--route-files intermediate_outputs/whitelist_warmup.rou.xml "
                  "--turn-files data/edge_relation_data_warmup.dat.xml "
                  "--output-file demand/calibrated_demand_warmup.rou.xml "
-                 "--attributes=\"type=\"'v_type_dist_base'\" departLane=\"'free'\" \"departSpeed=\"'0'\" ")
+                 "--attributes=\"type='v_type_dist_base' departLane='best' departSpeed='0'\" ")
 
 subprocess.run(route_sampler_warmup, shell=True)
 
@@ -92,7 +92,7 @@ for seed in random_numbers:
     subprocess.run(cmd, shell=True)
 
 # 6. Output processing
-scenarios = ["static_vehicle_data","dynamic_QL_vehicle_data", "dynamic_DQL_vehicle_data"]
+scenarios = ["static_vehicle_data", "dynamic_QL_vehicle_data", "dynamic_DQL_vehicle_data"]
 
 # converting static xml data file to csv
 for scene_folder in scenarios:
@@ -109,6 +109,21 @@ for scene_folder in scenarios:
         all_pd = pd.concat([all_pd, temp], ignore_index=True)
 
     all_pd.to_csv(f'outputs/{scene_folder}/processed_{scene_folder}.csv', index = False)
+
+for scene_folder in scenarios:
+    all_pd = pd.DataFrame()
+    for random_number in random_numbers:
+        xml_2_csv_call = f"""python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" outputs\\{scene_folder}\\{random_number}.tripinfo_{scene_folder}.xml -s ," """
+        subprocess.run(xml_2_csv_call, shell=True)
+
+        # read the output from xml2csv call to a pandas dataframe
+        temp = pd.read_csv(f"outputs/{scene_folder}/{random_number}.tripinfo_{scene_folder}.csv")
+        temp['random_seed'] = random_number
+        temp['scenario'] = scene_folder
+
+        all_pd = pd.concat([all_pd, temp], ignore_index=True)
+
+    all_pd.to_csv(f'outputs/{scene_folder}/processed_tripinfo_{scene_folder}.csv', index = False)
 
 # converting dynamic xml data file to csv
 '''xml_2_csv_call = """python "%SUMO_HOME%\\tools\\xml\\xml2csv.py" outputs\\dynamic_vehicle_data\\dynamic_vehicle_data.xml -s ," """
